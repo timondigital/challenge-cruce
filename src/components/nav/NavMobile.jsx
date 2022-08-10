@@ -4,6 +4,10 @@ import Icon from "../icon/Icon";
 
 import "./navMobile.scss";
 
-const NavMobile = () => <Icon icon="menu" className="burgerIcon" />;
+const NavMobile = () => (
+  <div className="navMobile">
+    <Icon icon="menu" className="burgerIcon" />
+  </div>
+);
 
 export default NavMobile;

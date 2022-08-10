@@ -17,17 +17,14 @@ const Header = () => {
   };
   return (
     <header className="header">
-      <nav>
-        {showMenu ? (
-          <div onClick={handleShowMenu}>
-            <NavMobile />
-          </div>
-        ) : (
-          <div onClick={handleShowMenu}>show</div>
-        )}
+      <nav onClick={handleShowMenu}>
+        {showMenu ? <NavMobile /> : <div>show</div>}
       </nav>
       <Icon icon="cruce" className="cruceLogo" />
-      <Icon icon="shopping" className="shoppingIcon" />
+      <div className="shop">
+        <Icon icon="shopping" className="shoppingIcon" />
+        <div className="numProduct">3</div>
+      </div>
     </header>
   );
 };

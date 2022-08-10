@@ -1,7 +1,29 @@
 @import "../../variables.scss";
 
 .header {
-  background: $green;
-  height: 72px;
+  background: $white;
+  height: 75px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .cruceLogo {
+    height: 45px;
+  }
+  .shop {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: flex-end;
+    .shoppingIcon {
+      height: 25px;
+    }
+    .numProduct {
+      font-family: "neueBold";
+      color: $red;
+      margin-left: 8px;
+      font-size: 1.1rem;
+      line-height: 0.8rem;
+    }
+  }
 }
