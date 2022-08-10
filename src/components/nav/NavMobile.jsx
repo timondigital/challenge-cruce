@@ -2,11 +2,11 @@ import React from "react";
 
 import Icon from "../icon/Icon";
 
-import "./navMobile.scss";
+import styles from "./navMobile.module.scss";
 
 const NavMobile = () => (
-  <div className="navMobile">
-    <Icon icon="menu" className="burgerIcon" />
+  <div className={styles.navMobile}>
+    <Icon icon="menu" className={styles.burgerIcon} />
   </div>
 );
 

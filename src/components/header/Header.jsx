@@ -7,7 +7,7 @@ import Icon from "../icon/Icon";
 import NavMobile from "../nav/NavMobile";
 
 //styles
-import "./header.scss";
+import styles from "./header.module.scss";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(true);
@@ -16,14 +16,14 @@ const Header = () => {
     setShowMenu(!showMenu);
   };
   return (
-    <header className="header">
+    <header className={styles.header}>
       <nav onClick={handleShowMenu}>
         {showMenu ? <NavMobile /> : <div>show</div>}
       </nav>
-      <Icon icon="cruce" className="cruceLogo" />
-      <div className="shop">
-        <Icon icon="shopping" className="shoppingIcon" />
-        <div className="numProduct">3</div>
+      <Icon icon="cruce" className={styles.cruceLogo} />
+      <div className={styles.shop}>
+        <Icon icon="shopping" className={styles.shoppingIcon} />
+        <div className={styles.numProduct}>3</div>
       </div>
     </header>
   );
