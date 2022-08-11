@@ -7,4 +7,10 @@
         font-size: 1.7rem;
         font-weight: 400;
     }
+
+    .contentCardsProduct {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
 }

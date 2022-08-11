@@ -1,0 +1,88 @@
+@import "../../variables.scss";
+
+.card {
+    width: calc((100% - 1rem) / 2);
+    padding: .5rem;
+    font-family: "neue";
+
+    .imgContent {
+        position: relative;
+
+        .productImg {
+            width: 100%;
+        }
+
+        .offer {
+            position: absolute;
+            bottom: 0;
+
+            .percentage {
+                position: absolute;
+                font-family: "neueBold";
+                color: $white;
+                top: 25%;
+                left: 25%;
+                // transform: translate(-50%, -50%);
+                transform: rotate(-20deg);
+
+                span {
+                    font-weight: normal;
+                    font-size: .8rem;
+                }
+            }
+
+            .imgOffer {
+                width: 85%;
+            }
+        }
+    }
+
+
+    .dataContent {
+        .dataGroup {
+
+            .title {
+                color: $purple;
+                font-size: 1rem;
+                font-family: "neueBold";
+            }
+
+            .description {
+                font-weight: normal;
+                letter-spacing: -.03rem;
+            }
+        }
+
+        .priceGroup {
+            margin-top: .4rem;
+
+            .fee {
+                font-size: .8rem;
+                color: $darkGray;
+            }
+
+            .priceFee {
+                font-family: "inter";
+                font-weight: bold;
+            }
+
+            .price {
+                font-size: .8rem;
+                margin-top: .2rem;
+
+                .priceList {
+                    text-decoration: line-through;
+                    color: $mediumGray;
+                    margin: .3rem;
+                }
+
+                .priceOffer {
+                    font-weight: bold;
+                    color: $red;
+                }
+            }
+        }
+    }
+
+
+}
