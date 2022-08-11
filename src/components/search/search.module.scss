@@ -1,6 +1,27 @@
 @import "../../variables.scss";
+@import "../../fonts/font-face.scss";
 
-.searchIcon {
-    height: 1rem;
-    color: $gray;
+.search {
+    position: relative;
+    margin-bottom: 1rem;
+
+    .searchIcon {
+        height: 1rem;
+        color: $darkGray;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-left: .5rem
+    }
+
+    .searchInput {
+        width: 100%;
+        font-size: 1rem;
+        font-family: "inter";
+        color: $black;
+        padding: .5rem;
+        padding-left: 2rem;
+        border-radius: 3px;
+        border: $gray solid 1px;
+    }
 }

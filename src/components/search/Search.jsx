@@ -6,9 +6,13 @@ import styles from "./search.module.scss";
 
 const Search = () => {
   return (
-    <div>
+    <div className={styles.search}>
       <Icon icon="search" className={styles.searchIcon} />
-      <input type="text" placeholder="¿Qué esás buscando?"></input>
+      <input
+        type="text"
+        placeholder="¿Qué estás buscando?"
+        className={styles.searchInput}
+      ></input>
     </div>
   );
 };

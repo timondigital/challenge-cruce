@@ -6,8 +6,11 @@ import styles from "./home.module.scss";
 
 const Home = () => {
   return (
-    <div>
+    <div className={styles.home}>
       <Search />
+      <h3 className={styles.title}>
+        Llegó el invierno, encontralo antes que nadie{" "}
+      </h3>
     </div>
   );
 };

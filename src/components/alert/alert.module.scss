@@ -5,7 +5,7 @@
   color: $white;
   padding: 0.4rem;
   font-size: 0.7rem;
-  font-family: "inter", sans-serif;
+  font-family: "inter";
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -14,11 +14,13 @@
   .closeAlert {
     padding: 5px;
     cursor: pointer;
+
     .closeIcon {
       height: 0.75rem;
     }
   }
 }
+
 .hidden {
   display: none;
 }
