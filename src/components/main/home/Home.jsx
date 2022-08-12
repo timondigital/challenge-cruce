@@ -1,9 +1,11 @@
 import React from "react";
 import Search from "../../search/Search";
 
+import CardProduct from "../../products/CardProduct";
+import Btn from "../../buttons/Btn";
+
 //styles
 import styles from "./home.module.scss";
-import CardProduct from "../../products/CardProduct";
 
 const Home = () => {
   return (
@@ -16,7 +18,9 @@ const Home = () => {
         <CardProduct />
         <CardProduct />
         <CardProduct />
+        <CardProduct />
       </div>
+      <Btn text="Ver colección" />
     </div>
   );
 };
