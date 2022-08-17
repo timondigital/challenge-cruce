@@ -1,0 +1,29 @@
+@import "../../variables.scss";
+
+.title {
+  color: $purple;
+}
+
+.contentBrands {
+  overflow: auto;
+  display: flex;
+  padding: 1rem 0;
+
+
+  .contentImg {
+    width: 50%;
+    background: $white;
+    margin: 0 1rem;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, .15);
+    border-radius: 9px;
+    opacity: .5;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    img {
+      padding: .75rem 1.5rem;
+    }
+  }
+}
