@@ -1,8 +1,8 @@
 import IcoMoon, { iconList } from "react-icomoon";
 import iconSet from "../../asset/icons/selection.json";
 
-//list of icons
-//console.log(iconList(iconSet));
+// descomentar el console para ver la lista de iconos completa o ver el demo en "asset/icomoon"
+// console.log(iconList(iconSet));
 
 const Icon = (props) => <IcoMoon iconSet={iconSet} {...props} />;
 

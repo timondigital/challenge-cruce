@@ -5,6 +5,7 @@ import Search from "../../search/Search";
 import styles from "./home.module.scss";
 import Products from "../../products/Products";
 import Brands from "../../brands/Brands";
+import InfoSlide from "../../slides/info/InfoSlide";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Search />
       <Products />
       <Brands />
+      <InfoSlide />
     </div>
   );
 };
