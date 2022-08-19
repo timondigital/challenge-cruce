@@ -1,0 +1,49 @@
+@import "../../variables.scss";
+
+.dataContent {
+    .dataGroup {
+
+        .title {
+            color: $purple;
+            font-size: 1rem;
+            // font-family: "neueBold";
+            font-weight: 800;
+        }
+
+        .description {
+            font-weight: normal;
+            letter-spacing: -.03rem;
+            // text-overflow: ellipsis;// overflow: hidden;
+        }
+    }
+
+    .priceGroup {
+        margin-top: .4rem;
+
+        .fee {
+            font-size: .8rem;
+            color: $darkGray;
+        }
+
+        .priceFee {
+            font-family: "inter";
+            font-weight: bold;
+        }
+
+        .price {
+            font-size: .8rem;
+            margin-top: .2rem;
+
+            .priceList {
+                text-decoration: line-through;
+                color: $mediumGray;
+                margin: .3rem;
+            }
+
+            .priceOffer {
+                font-weight: bold;
+                color: $red;
+            }
+        }
+    }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 
-import CardProduct from "./CardProduct";
+import CardProduct from "./cardProduct/CardProduct";
 import Btn from "../buttons/Btn";
 
 //styles

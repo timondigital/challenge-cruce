@@ -6,6 +6,7 @@ import styles from "./home.module.scss";
 import Products from "../../products/Products";
 import Brands from "../../brands/Brands";
 import InfoSlide from "../../slides/info/InfoSlide";
+import ToyOfDay from "../../toyOfDay/ToyOfDay";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Products />
       <Brands />
       <InfoSlide />
+      <ToyOfDay />
     </div>
   );
 };

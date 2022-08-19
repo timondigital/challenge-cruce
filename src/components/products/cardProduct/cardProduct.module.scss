@@ -1,0 +1,11 @@
+@import "../../../variables.scss";
+
+.card {
+    padding: .5rem;
+    font-family: "neue";
+
+    &:nth-child(3) {
+        padding-top: 4rem;
+    }  
+
+}

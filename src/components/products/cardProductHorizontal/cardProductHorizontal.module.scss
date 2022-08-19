@@ -1,0 +1,11 @@
+@import "../../../variables.scss";
+
+.card {
+    display: flex;
+    column-gap: .9rem;
+    align-items: center;
+
+    .productImg {
+        width: 60%;
+    }
+}

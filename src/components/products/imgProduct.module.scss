@@ -1,0 +1,33 @@
+@import "../../variables.scss";
+
+.imgContent {
+    position: relative;
+
+    .productImg {
+        width: 100%;
+    }
+
+    .offer {
+        position: absolute;
+        bottom: 0;
+
+        .percentage {
+            position: absolute;
+            font-family: "neueBold";
+            color: $white;
+            top: 25%;
+            left: 25%;
+            // transform: translate(-50%, -50%);
+            transform: rotate(-20deg);
+
+            span {
+                font-weight: normal;
+                font-size: .8rem;
+            }
+        }
+
+        .imgOffer {
+            width: 85%;
+        }
+    }
+}
