@@ -9,6 +9,8 @@ import InfoSlide from "../../slides/info/InfoSlide";
 import ToyOfDay from "../../toyOfDay/ToyOfDay";
 import MostWanted from "../../mostWanted/MostWanted";
 import News from "../../news/News";
+import Campaign from "../../campaign/Campaign";
+import EndIn from "../../endsIn/EndIn";
 
 const Home = () => {
   return (
@@ -20,6 +22,8 @@ const Home = () => {
       <ToyOfDay />
       <MostWanted />
       <News />
+      <Campaign />
+      <EndIn />
     </div>
   );
 };

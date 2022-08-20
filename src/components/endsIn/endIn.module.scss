@@ -1,0 +1,35 @@
+@import "../../variables.scss";
+
+.content {
+
+    margin: 2.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2.1rem;
+
+    .header {
+        width: 48%;
+
+        .title {
+            font-family: "neueBold";
+            color: $darkGray;
+            font-size: 1rem;
+            line-height: 1.9rem;
+        }
+
+        .time {
+            font-family: "neueBold";
+            color: $red;
+            font-size: 1.7rem;
+        }
+
+        .timeLegend {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-size: .9rem;
+            color: $darkGray;
+        }
+    }
+
+}

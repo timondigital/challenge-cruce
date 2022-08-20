@@ -1,21 +1,27 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 
-import styles from "./news.module.scss";
 import CardProduct from "../products/cardProduct/CardProduct";
-import BtnCircle from "../buttons/btnCircle/BtnCircle";
+import BtnGroup from "../buttons/btnGroup/BtnGroup";
+import product from "../../img/products/product1.png";
+
+import styles from "./news.module.scss";
+
 const News = () => {
   return (
     <div className={styles.content}>
-      <h2 className={styles.title}>Novedades</h2>
-      <div> VER TODO</div>
-      <div className={styles.contentProduct}>
-        <CardProduct />
-        <CardProduct />
+      <div className={styles.contentHeader}>
+        <h2 className={styles.title}>Novedades</h2>
+        <div className={styles.allView}> VER TODO</div>
       </div>
-      <div className={styles.contentButton}>
-        <BtnCircle className={styles.left} icon="left" />
-        <BtnCircle className={styles.right} icon="right" />
+      <div className={styles.contentProduct}>
+        <CardProduct img={product} />
+        <CardProduct img={product} />
+      </div>
+      <div className={styles.newsFooter}>
+        <BtnGroup />
+
+        <div className={styles.pagination}>2 de 12</div>
       </div>
     </div>
   );

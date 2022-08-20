@@ -5,11 +5,11 @@ import ImgProduct from "../ImgProduct";
 
 import styles from "./cardProductHorizontal.module.scss";
 
-const CardProductHorizontal = () => {
+const CardProductHorizontal = (props) => {
   return (
     <div className={`${styles.card} `}>
       <div className={styles.productImg}>
-        <ImgProduct />
+        <ImgProduct img={props.img} />
       </div>
       <DataProduct />
     </div>

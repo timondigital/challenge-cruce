@@ -1,13 +1,16 @@
 import React from "react";
 
 import offer from "../../img/offer.png";
-import product from "../../img/products/product1.png";
 import styles from "./imgProduct.module.scss";
 
-const ImgCard = () => {
+const ImgCard = (props) => {
   return (
     <div className={`${styles.imgContent} `}>
-      <img className={`${styles.productImg}`} src={product} alt="descripcion" />
+      <img
+        className={`${styles.productImg}`}
+        src={props.img}
+        alt="descripcion"
+      />
       <div className={styles.offer}>
         <div className={styles.percentage}>
           10<span>%</span>

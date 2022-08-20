@@ -1,0 +1,49 @@
+@import "../../variables.scss";
+
+.content {
+    margin: 1rem 0;
+
+
+    .imgHeader {
+        position: relative;
+
+        .imgPrincipal {
+            width: 100vw;
+            position: relative;
+            right: 1rem;
+        }
+
+        .imgSecondary {
+            position: absolute;
+            width: 180px;
+            height: auto;
+            top: 36%;
+            right: 3%;
+        }
+    }
+
+    .contentProduct {
+        z-index: 200;
+        position: relative;
+        margin-top: 3rem;
+
+        .contentImg {
+            width: 75vw;
+            display: flex;
+            justify-content: center;
+            background: $white;
+
+        }
+
+        .footerProduct {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: .5rem;
+
+            .pagination {
+                font-size: .95rem;
+            }
+        }
+    }
+}

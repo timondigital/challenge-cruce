@@ -5,10 +5,10 @@ import ImgProduct from "../ImgProduct";
 
 import styles from "./cardProduct.module.scss";
 
-const CardProduct = () => {
+const CardProduct = (props) => {
   return (
     <div className={`${styles.card} `}>
-      <ImgProduct />
+      <ImgProduct img={props.img} />
       <DataProduct />
     </div>
   );

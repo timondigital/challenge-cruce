@@ -1,24 +1,37 @@
 @import "../../variables.scss";
 
 .content {
+    margin: 1rem 0;
 
-    margin-top: 5rem;
 
-    .title {
-        font-family: "neueBold";
-        color: $black;
-        width: 50%;
-        font-size: 1.75rem;
-        line-height: 1.9rem;
+    .contentHeader {
+        .title {
+            font-family: "neueBold";
+            margin-bottom: 1.2rem;
+            color: $black;
+            width: 50%;
+            font-size: 1.75rem;
+            line-height: 1.9rem;
+        }
+
+        .allView {
+            font-family: "neueBold";
+            font-size: .65em;
+        }
     }
 
     .contentProduct {
         display: flex;
+        margin-bottom: 1rem;
     }
 
-    .contentButton {
-        background: red;
-        width: 100px;
-        height: 50px;
+    .newsFooter {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .pagination {
+            font-size: .9rem;
+        }
     }
 }
