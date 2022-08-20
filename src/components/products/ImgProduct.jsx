@@ -1,7 +1,7 @@
 import React from "react";
 
 import offer from "../../img/offer.png";
-import product from "../../img/products/product2.png";
+import product from "../../img/products/product1.png";
 import styles from "./imgProduct.module.scss";
 
 const ImgCard = () => {

@@ -5,39 +5,14 @@
      align-items: center;
      position: relative;
 
-     .arrow {
-         width: 1.5rem;
-         height: 1.5rem;
-         border-radius: 50%;
-         background: $white;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         position: absolute;
+     .right {
+         padding-left: .1rem;
+         right: 0;
+     }
 
-         &:hover {
-             box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
-         }
-
-         &:active {
-             box-shadow: none;
-         }
-
-         .iconArrow {
-             height: 40%;
-
-         }
-
-         &.right {
-             padding-left: .1rem;
-             right: 0;
-         }
-
-         &.left {
-             padding-right: .1rem;
-             left: 0;
-         }
-
+     .left {
+         padding-right: .1rem;
+         left: 0;
      }
 
      .slide {

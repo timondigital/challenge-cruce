@@ -1,0 +1,27 @@
+@import "../../../variables.scss";
+
+.arrow {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+    .iconArrow {
+        position: absolute;
+        width: 6px;
+    }
+
+    &:hover {
+        box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
+    }
+
+    &:active {
+        box-shadow: none;
+    }
+
+
+}

@@ -1,0 +1,17 @@
+ @import "../../variables.scss";
+
+ .content {
+
+     margin-top: 5rem;
+     display: flex;
+     flex-wrap: wrap;
+     row-gap: 2.1rem;
+
+     .title {
+         font-family: "neueBold";
+         color: $green;
+         width: 50%;
+         font-size: 1.75rem;
+         line-height: 1.9rem;
+     }
+ }

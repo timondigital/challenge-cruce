@@ -4,8 +4,10 @@
     display: flex;
     column-gap: .9rem;
     align-items: center;
+    position: relative;
+    top: -8px;
 
     .productImg {
-        width: 60%;
+        width: 65%;
     }
 }

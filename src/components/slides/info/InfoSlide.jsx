@@ -1,15 +1,13 @@
 import React from "react";
 import Icon from "../../icon/Icon";
-
 import styles from "./infoSlide.module.scss";
-import marvel from "../../../img/brands/marvel.png";
+import BtnCircle from "../../buttons/btnCircle/BtnCircle";
+
 const InfoSlide = () => {
   return (
     <>
       <div className={styles.contentInfo}>
-        <div className={`${styles.arrow} ${styles.left}`}>
-          <Icon className={styles.iconArrow} icon="left" />
-        </div>
+        <BtnCircle className={styles.left} icon="left" />
 
         <div className={styles.slide}>
           <div className={styles.slide}>
@@ -54,9 +52,7 @@ const InfoSlide = () => {
               </div>
             </div>
           </div>
-          <div className={`${styles.arrow} ${styles.right}`}>
-            <Icon className={styles.iconArrow} icon="right" />
-          </div>
+          <BtnCircle className={styles.right} icon="right" />
         </div>
       </div>
     </>

@@ -8,7 +8,7 @@ import CardProductHorizontal from "../products/cardProductHorizontal/CardProduct
 
 const ToyOfDay = () => {
   return (
-    <div>
+    <div className={styles.content}>
       <h2 className={styles.title}>Juguete del día</h2>
       <img className={styles.img} src={video} alt="video promocion del día" />
       <CardProductHorizontal />

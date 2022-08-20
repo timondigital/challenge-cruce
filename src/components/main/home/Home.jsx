@@ -7,6 +7,8 @@ import Products from "../../products/Products";
 import Brands from "../../brands/Brands";
 import InfoSlide from "../../slides/info/InfoSlide";
 import ToyOfDay from "../../toyOfDay/ToyOfDay";
+import MostWanted from "../../mostWanted/MostWanted";
+import News from "../../news/News";
 
 const Home = () => {
   return (
@@ -16,6 +18,8 @@ const Home = () => {
       <Brands />
       <InfoSlide />
       <ToyOfDay />
+      <MostWanted />
+      <News />
     </div>
   );
 };

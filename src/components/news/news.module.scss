@@ -1,0 +1,24 @@
+@import "../../variables.scss";
+
+.content {
+
+    margin-top: 5rem;
+
+    .title {
+        font-family: "neueBold";
+        color: $black;
+        width: 50%;
+        font-size: 1.75rem;
+        line-height: 1.9rem;
+    }
+
+    .contentProduct {
+        display: flex;
+    }
+
+    .contentButton {
+        background: red;
+        width: 100px;
+        height: 50px;
+    }
+}

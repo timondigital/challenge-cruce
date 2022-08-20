@@ -1,18 +1,21 @@
 @import "../../variables.scss";
 
-.title {
-    color: $orange;
-    font-weight: bold;
-    font-size: 2.7rem;
-    width: 100vw;
-    right: .5rem;
-    position: relative;
-    font-family: arial;
-}
+.content {
 
-.img {
-    width: 100%;
-    position: relative;
-    top: -10px;
-}
+    .title {
+        color: $orange;
+        font-weight: bold;
+        font-size: 2.7rem;
+        width: 100vw;
+        right: .5rem;
+        position: relative;
+        font-family: arial;
+    }
 
+    .img {
+        width: 100%;
+        position: relative;
+        top: -10px;
+    }
+
+}
