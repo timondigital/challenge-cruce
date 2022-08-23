@@ -1,0 +1,12 @@
+ .content {
+     position: absolute;
+     bottom: 8%;
+     right: 5%;
+     width: 3.75rem;
+     height: 3.75rem;
+     z-index: 500;
+
+     .img:hover {
+         filter: drop-shadow(0 3px 9px rgba(0, 0, 0, .2));
+     }
+ }
