@@ -1,0 +1,23 @@
+@import "../../../variables.scss";
+
+.btn {
+    background: $yellow;
+    border-radius: 7.5rem 7.5rem 0 0;
+    width: 7.5rem;
+    height: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+
+    .icon {
+        height: 28%;
+    }
+
+    .text {
+        font-family: "neueBold";
+        font-size: .65rem;
+    }
+}

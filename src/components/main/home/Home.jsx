@@ -11,6 +11,7 @@ import MostWanted from "../../mostWanted/MostWanted";
 import News from "../../news/News";
 import Campaign from "../../campaign/Campaign";
 import EndIn from "../../endsIn/EndIn";
+import Recommended from "../../recommended/Recommended";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
       <News />
       <Campaign />
       <EndIn />
+      <Recommended />
     </div>
   );
 };

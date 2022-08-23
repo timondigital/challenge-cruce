@@ -5,10 +5,10 @@ const BtnGroup = () => {
   return (
     <div className={styles.contentButtons}>
       <div className={`${styles.contentBtnCircle}`}>
-        <BtnCircle className={styles.left} icon="left" />
+        <BtnCircle icon="left" />
       </div>
       <div className={`${styles.contentBtnCircle}`}>
-        <BtnCircle className={styles.right} icon="right" />
+        <BtnCircle icon="right" />
       </div>
     </div>
   );
