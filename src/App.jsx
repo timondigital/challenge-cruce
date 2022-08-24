@@ -3,15 +3,15 @@ import Main from "./components/main/Main.jsx";
 import Footer from "./components/footer/Footer.jsx";
 
 //styles
-import "./App.scss";
+import styles from "./app.module.scss";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Header />
       <Main />
       <Footer />
-    </div>
+    </>
   );
 }
 

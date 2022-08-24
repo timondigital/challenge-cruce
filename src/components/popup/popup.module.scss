@@ -4,11 +4,13 @@
      width: 60%;
      position: absolute;
      z-index: 500;
-     margin-left: 10%;
+     margin-left: 9%;
      bottom: 8%;
+     transition: ease 5s;
 
      &.hidden {
          display: none;
+         transition: ease 5s;
      }
 
      .img {
@@ -26,7 +28,7 @@
          align-items: center;
          position: absolute;
          top: 0;
-         right: 2.5%;
+         right: 2.8%;
 
          svg {
              width: 30%;

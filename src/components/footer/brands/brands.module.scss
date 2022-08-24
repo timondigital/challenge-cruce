@@ -1,0 +1,43 @@
+@import "../../../variables.scss";
+
+.contentBrands {
+    width: 100%;
+    margin: .9rem 0;
+
+    .lineOne {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lineTwo {
+        display: flex;
+        justify-content: center;
+        margin-top: .2rem;
+        column-gap: 1rem;
+    }
+
+    .icon {
+        width: 20%;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            color: $mediumGray;
+        }
+
+        &.cruce {
+            svg {
+
+                color: $black;
+            }
+        }
+
+        img {
+            width: auto;
+
+        }
+
+    }
+}
