@@ -41,6 +41,17 @@ const InfoSlide = () => {
               <h5 className={styles.subtext}>En todas las compras</h5>
             </div>
           </div>
+          <div>
+            <svg width="36" height="45" viewBox="0 0 45 30">
+              <line
+                x1="25"
+                y1="0"
+                x2="0"
+                y2="40"
+                className={styles.obliqueLine}
+              />
+            </svg>
+          </div>
           <div className={styles.content}>
             <div className={styles.contentIcon}>
               <Icon className={styles.icon} icon="delivery_moto" />

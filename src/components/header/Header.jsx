@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 //icons
 import Icon from "../icon/Icon";
@@ -12,18 +12,27 @@ import Nav from "../nav/Nav";
 
 const Header = () => {
   const [hiddenMenu, sethiddenMenu] = useState(true);
+  const [widthScreen, setWidthScreen] = useState(window.innerWidth);
 
-  var windowWidth = window.innerWidth;
-  const widthDesktop = 1366;
+  const desktopScreenWidth = 1366;
 
   const handlehiddenMenu = () => {
-    windowWidth <= widthDesktop
-      ? sethiddenMenu(true)
-      : sethiddenMenu(!hiddenMenu);
+    sethiddenMenu(!hiddenMenu);
   };
+
+  useEffect(() => {
+    sethiddenMenu(true);
+  }, [widthScreen]);
+
+  //  ver como usar setWidthScreen() cuando se cambia el tamaño de pantalla
+  console.log(window.screen.width);
+
   return (
     <header className={styles.header}>
-      <nav className={styles.nav} onClick={handlehiddenMenu}>
+      <nav
+        className={styles.nav}
+        onClick={widthScreen <= desktopScreenWidth ? handlehiddenMenu : null}
+      >
         {hiddenMenu ? (
           <>
             <BtnNav icon="menu" />

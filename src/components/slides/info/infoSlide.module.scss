@@ -3,12 +3,14 @@
  .contentInfo {
      display: flex;
      align-items: center;
+     justify-content: center;
      position: relative;
      width: 100%;
 
      .contentBtnCircle {
          width: 1.8rem;
-         height: 1.5rem;
+         min-width: 1.7rem;
+         height: 1.7rem;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -28,6 +30,7 @@
          margin: 0 .5rem;
          align-items: center;
          width: 95%;
+         max-width: 700px;
 
          .obliqueLine {
              stroke: $gray;
@@ -37,13 +40,14 @@
          .content {
              display: flex;
              width: auto;
-             padding: 1rem;
+             padding: 1rem .5rem;
              column-gap: .5rem;
 
 
              .contentIcon {
                  width: auto;
                  min-width: 25%;
+                 min-width: 2rem;
                  color: $green;
                  padding: .4rem;
 
@@ -66,6 +70,27 @@
                      color: $red;
                  }
              }
+
+             &:nth-child(5) {
+                 .subtext {
+                     color: $mediumGray;
+                 }
+             }
          }
      }
  }
+
+
+ @media screen and (min-width: 768px) {
+     .contentInfo {
+         .contentBtnCircle {
+             display: none;
+         }
+
+         .slide {
+             padding: 0;
+         }
+     }
+ }
+
+ @media screen and (min-width: 1365px) {}

@@ -1,4 +1,4 @@
-@import "../../variables.scss";
+@import "../../../variables.scss";
 
 .imgContent {
     position: relative;
@@ -28,6 +28,23 @@
 
         .imgOffer {
             width: 85%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .imgContent {
+
+        .productImg {
+            margin-bottom: .8rem;
+        }
+
+        .offer {
+            bottom: -2px;
+
+            .imgOffer {
+                width: 95%
+            }
         }
     }
 }

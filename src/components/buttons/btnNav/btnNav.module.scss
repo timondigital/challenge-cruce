@@ -10,3 +10,9 @@
     height: 14px;
   }
 }
+
+@media screen and (min-width:1366px) {
+  .btnNav {
+    cursor: default;
+  }
+}

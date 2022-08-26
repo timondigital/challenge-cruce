@@ -1,4 +1,4 @@
-@import "../../variables.scss";
+@import "../../../variables.scss";
 
 .dataContent {
     .dataGroup {
@@ -43,6 +43,41 @@
             .priceOffer {
                 font-weight: bold;
                 color: $red;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .dataContent {
+        .dataGroup {
+
+            .title {
+                padding: .1rem 0;
+            }
+
+            .description {
+                padding-bottom: .4rem;
+            }
+        }
+
+        .priceGroup {
+            margin-top: .5rem;
+
+            .fee {
+                font-size: .8rem;
+                color: $darkGray;
+            }
+
+            .priceFee {
+                font-size: 1.4rem;
+            }
+
+            .price {
+
+                .priceList {}
+
+                .priceOffer {}
             }
         }
     }

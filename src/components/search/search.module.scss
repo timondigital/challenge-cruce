@@ -25,3 +25,12 @@
         border: $gray solid 1px;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .search {
+
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1365px) {}

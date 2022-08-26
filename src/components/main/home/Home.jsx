@@ -14,12 +14,17 @@ import EndIn from "../../endsIn/EndIn";
 import Recommended from "../../recommended/Recommended";
 
 const Home = () => {
+  const screenWidth = window.screen.width;
+  const whidtTablet = 768;
+  console.log(screenWidth >= whidtTablet);
+
   return (
     <div className={styles.home}>
       <Search />
+      {screenWidth >= whidtTablet ? <InfoSlide /> : null}
       <Products />
       <Brands />
-      <InfoSlide />
+      {screenWidth >= whidtTablet ? null : <InfoSlide />}
       <ToyOfDay />
       <MostWanted />
       <News />

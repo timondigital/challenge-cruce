@@ -6,7 +6,7 @@ import imgProduct from "../../img/products/backpack.png";
 import CardProduct from "../products/cardProduct/CardProduct";
 
 import styles from "./campaign.module.scss";
-import DataCard from "../products/DataProduct";
+import DataCard from "../products/cardsProductComponent/DataProduct";
 import BtnGroup from "../buttons/btnGroup/BtnGroup";
 
 const Campaign = () => {
