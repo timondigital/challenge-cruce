@@ -1,17 +1,42 @@
  @import "../../variables.scss";
 
  .content {
-
-     margin: 2.5rem 0;
+     margin: 2rem 0;
      display: flex;
      flex-wrap: wrap;
      row-gap: 2.1rem;
+     justify-content: center;
+     align-items: center;
+     max-width: 750px;
+     margin: auto;
 
      .title {
-         font-family: "neueBold";
          color: $green;
          width: 50%;
-         font-size: 1.75rem;
-         line-height: 1.9rem;
+         max-width: 12rem;
+     }
+ }
+
+ @media screen and (min-width: 768px) {
+     .content {
+
+         .title {
+             width: 30%;
+         }
+     }
+ }
+
+ @media screen and (min-width: 1024px) {
+     .content {
+
+         .title {}
+     }
+ }
+
+ @media screen and (min-width: 1365px) {
+     .content {
+         max-width: 100%;
+
+         .title {}
      }
  }

@@ -7,11 +7,11 @@ import styles from "./cardProductHorizontal.module.scss";
 
 const CardProductHorizontal = (props) => {
   return (
-    <div className={`${styles.card} `}>
+    <div className={`${styles.card} ${props.className}`}>
       <div className={styles.productImg}>
         <ImgProduct img={props.img} />
       </div>
-      <DataProduct />
+      <DataProduct className={styles.dataProduct} />
     </div>
   );
 };

@@ -11,7 +11,7 @@ const News = () => {
   return (
     <div className={styles.content}>
       <div className={styles.contentHeader}>
-        <h2 className={styles.title}>Novedades</h2>
+        <h2 className={`${styles.title} title`}>Novedades</h2>
         <div className={styles.allView}> VER TODO</div>
       </div>
       <div className={styles.contentProduct}>

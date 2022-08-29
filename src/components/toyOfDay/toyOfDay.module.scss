@@ -1,23 +1,100 @@
 @import "../../variables.scss";
 
 .content {
-
-    margin-bottom: 2.5rem;
+    margin: 2.3rem 0 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    align-items: center;
 
     .title {
         color: $orange;
-        font-weight: bold;
         font-size: 2.7rem;
         width: 100vw;
-        right: .5rem;
-        position: relative;
+        position: absolute;
+        top: -40px;
+        right: -15px;
         font-family: arial;
+        font-weight: bold;
     }
 
     .img {
         width: 100%;
         position: relative;
-        top: -10px;
     }
+
+    .cardProductHorizontal {
+        width: auto;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 2rem;
+        flex-direction: row;
+        margin: 5rem 0 2rem;
+
+        .title {
+            font-size: 4rem;
+            right: -4rem;
+        }
+
+        .img {
+            width: 60%;
+            justify-self: right;
+        }
+
+        .cardProductHorizontal {}
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .content {
+        margin: 7.8rem 0 2rem;
+
+        .title {
+            font-size: 7rem;
+            right: -6rem;
+            top: -45px;
+        }
+
+        .img {
+            width: 72%;
+        }
+
+        .cardProduct {
+            margin-top: 3rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1365px) {
+    .content {
+        margin: 11rem 0 2rem;
+
+        .title {
+            font-size: 7rem;
+            top: -100px;
+        }
+
+        .img {
+            width: 73%;
+        }
+
+        .cardProduct {
+            margin-top: 3rem;
+            max-width: 300px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
 
 }

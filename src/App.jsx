@@ -3,7 +3,7 @@ import Main from "./components/main/Main.jsx";
 import Footer from "./components/footer/Footer.jsx";
 
 //styles
-import styles from "./app.module.scss";
+import styles from "./app.scss";
 
 function App() {
   return (

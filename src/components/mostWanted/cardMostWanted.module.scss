@@ -1,5 +1,6 @@
 .content {
     width: 50%;
+    max-width: 12rem;
     display: flex;
     align-items: center;
 
@@ -12,3 +13,18 @@
         font-size: .8rem;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .content {
+        width: 30%;
+
+        .productImg {}
+
+        .text {}
+
+    }
+}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1365px) {}

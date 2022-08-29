@@ -12,11 +12,11 @@ const Products = () => {
   return (
     <>
       <div className={styles.contentCardsProduct}>
-        <h3 className={styles.title}>
+        <h3 className={`${styles.title} title`}>
           Llegó el invierno, encontralo antes que nadie
         </h3>
         <p>La colección más completa de Game of Thrones está en X</p>
-        <Btn className={styles.btnHeaderBlock} text="Ver colección" />
+        <Btn className={styles.btnBotton} text="Ver colección" />
         <CardProduct
           className={`${styles.product} ${styles.num1}`}
           img={product}
@@ -42,7 +42,6 @@ const Products = () => {
           img={product}
         />
       </div>
-      <Btn className={styles.btnBotton} text="Ver colección" />
     </>
   );
 };

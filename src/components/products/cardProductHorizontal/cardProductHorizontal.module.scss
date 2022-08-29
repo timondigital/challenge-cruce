@@ -2,12 +2,17 @@
 
 .card {
     display: flex;
-    column-gap: .9rem;
-    align-items: center;
+    align-items: start;
+    justify-content: center;
     position: relative;
     top: -8px;
+    max-width: 400px;
 
     .productImg {
-        width: 65%;
+        width: 60%;
+    }
+
+    .dataProduct {
+        margin-top: .7rem;
     }
 }

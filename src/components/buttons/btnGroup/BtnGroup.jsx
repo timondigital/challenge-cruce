@@ -1,9 +1,9 @@
 import React from "react";
 import BtnCircle from "../btnCircle/BtnCircle";
 import styles from "./btnGroup.module.scss";
-const BtnGroup = () => {
+const BtnGroup = (props) => {
   return (
-    <div className={styles.contentButtons}>
+    <div className={`${styles.contentButtons} ${props.className}`}>
       <div className={`${styles.contentBtnCircle}`}>
         <BtnCircle icon="left" />
       </div>

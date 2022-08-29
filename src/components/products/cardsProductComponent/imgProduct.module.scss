@@ -4,11 +4,13 @@
     position: relative;
 
     .productImg {
-        width: 100%;
+        width: 95%;
+        max-width: 10rem;
     }
 
     .offer {
         position: absolute;
+        width: 4.2rem;
         bottom: 0;
 
         .percentage {

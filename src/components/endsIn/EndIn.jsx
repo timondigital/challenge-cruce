@@ -9,7 +9,7 @@ const EndIn = () => {
   return (
     <div className={styles.content}>
       <div className={styles.header}>
-        <h2 className={styles.title}> Termina en</h2>
+        <h2 className={`${styles.title} title`}> Termina en</h2>
         <div className={styles.time}>23:03:04</div>
         <div className={styles.timeLegend}>
           <div>HS</div>

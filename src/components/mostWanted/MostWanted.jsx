@@ -8,7 +8,7 @@ import styles from "./mostWanted.module.scss";
 const MostWanted = () => {
   return (
     <div className={styles.content}>
-      <h2 className={styles.title}>Lo más buscado</h2>
+      <h2 className={`${styles.title} title`}>Lo más buscado</h2>
 
       <CardMostWanted product={product1} text={"Dinosaurio robot para armar"} />
       <CardMostWanted product={product1} text={"Dinosaurio robot para armar"} />
