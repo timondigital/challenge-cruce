@@ -20,26 +20,32 @@ const Products = () => {
         <CardProduct
           className={`${styles.product} ${styles.num1}`}
           img={product}
+          off={true}
         />
         <CardProduct
           className={`${styles.product} ${styles.num2}`}
           img={product}
+          off={false}
         />
         <CardProduct
           className={`${styles.product} ${styles.num3}`}
           img={product}
+          off={false}
         />
         <CardProduct
           className={`${styles.product} ${styles.num4}`}
           img={product}
+          off={false}
         />
         <CardProduct
           className={`${styles.product} ${styles.num5}`}
           img={product}
-        />{" "}
+          off={false}
+        />
         <CardProduct
           className={`${styles.product} ${styles.num6}`}
           img={product}
+          off={false}
         />
       </div>
     </>

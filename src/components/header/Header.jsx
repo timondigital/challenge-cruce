@@ -25,7 +25,7 @@ const Header = () => {
   }, [widthScreen]);
 
   //  ver como usar setWidthScreen() cuando se cambia el tamaño de pantalla
-  console.log(window.screen.width);
+  // console.log(window.screen.width);
 
   return (
     <header className={styles.header}>

@@ -30,12 +30,17 @@ const ToyOfDay = () => {
           />
           <CardProductHorizontal
             img={product}
+            off={true}
             className={styles.cardProductHorizontal}
           />
         </>
       ) : (
         <>
-          <CardProduct img={product} className={styles.cardProduct} />
+          <CardProduct
+            img={product}
+            className={styles.cardProduct}
+            off={true}
+          />
           <img
             className={styles.img}
             src={video}

@@ -15,7 +15,7 @@
 
         .imgSecondary {
             position: absolute;
-            width: 180px;
+            width: 50vw;
             height: auto;
             top: 36%;
             right: 3%;
@@ -25,10 +25,15 @@
     .contentProduct {
         z-index: 200;
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         margin-top: 3rem;
 
+
         .contentImg {
-            width: 75vw;
+            width: 75%;
             display: flex;
             justify-content: center;
             background: $white;
@@ -40,9 +45,135 @@
             justify-content: space-between;
             align-items: flex-end;
             margin-top: .5rem;
+            width: 100%;
 
             .pagination {
                 font-size: .95rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        margin: 3rem 0rem;
+        display: flex;
+        gap: 1rem;
+
+        .imgHeader {
+            width: 70vw;
+
+            .imgPrincipal {
+                width: 100%;
+                right: 0rem;
+            }
+
+            .imgSecondary {
+                width: 60%;
+                top: 25%;
+                right: 10%;
+            }
+        }
+
+        .contentProduct {
+            margin-top: 0rem;
+            width: 35%;
+
+            .contentImg {
+                width: 35%;
+
+            }
+
+            .btnShop {
+                display: none;
+            }
+
+            .footerProduct {
+                width: 100%;
+
+                .pagination {}
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .content {
+        gap: 2rem;
+
+        .imgHeader {
+
+            .imgPrincipal {
+                top: 2%;
+            }
+
+            .imgSecondary {
+                width: 48%;
+                top: 30%;
+                right: 10%;
+            }
+        }
+
+        .contentProduct {
+            align-items: start;
+            width: 30%;
+
+            .contentImg {
+                width: 100%;
+            }
+
+            .dataCard {
+                width: 100%;
+            }
+
+            .btnShop {
+                display: flex;
+            }
+
+            .footerProduct {
+                margin-top: 3.5rem;
+
+                .pagination {}
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1365px) {
+    .content {
+        gap: 5.5rem;
+
+        .imgHeader {
+
+            .imgPrincipal {
+                margin-top: 0;
+            }
+
+            .imgSecondary {
+                width: 40%;
+                // top: 25%;
+                right: 13%;
+            }
+        }
+
+        .contentProduct {
+            align-items: start;
+            width: 19%;
+
+            .contentImg {}
+
+            .dataCard {
+                padding: 0 .8rem;
+            }
+
+            .btnShop {
+                margin-left: .8rem;
+            }
+
+            .footerProduct {
+                margin-top: 3.5rem;
+
+                .pagination {}
             }
         }
     }

@@ -18,7 +18,7 @@
     .card {
 
         &:nth-child(3) {
-            padding-top: 0
+            padding-top: 0.5rem
         }
 
     }
@@ -26,6 +26,9 @@
 
 @media screen and (min-width: 1024px) {
     .card {
+
+        max-width: 420px;
+
         .btnShop {
             display: flex;
         }

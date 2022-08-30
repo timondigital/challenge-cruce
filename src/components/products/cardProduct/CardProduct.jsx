@@ -8,8 +8,8 @@ import styles from "./cardProduct.module.scss";
 const CardProduct = (props) => {
   return (
     <div className={`${styles.card} ${props.className}`}>
-      <ImgProduct img={props.img} />
-      <DataProduct />
+      <ImgProduct img={props.img} off={props.off} />
+      <DataProduct off={props.off} />
       <BtnShop className={`${styles.btnShop}`} text="Agregar" />
     </div>
   );

@@ -16,7 +16,7 @@ import Recommended from "../../recommended/Recommended";
 const Home = () => {
   const screenWidth = window.screen.width;
   const whidtTablet = 768;
-  console.log(screenWidth >= whidtTablet);
+  // console.log(screenWidth >= whidtTablet);
 
   return (
     <div className={styles.home}>

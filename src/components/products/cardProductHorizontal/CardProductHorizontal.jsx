@@ -9,9 +9,9 @@ const CardProductHorizontal = (props) => {
   return (
     <div className={`${styles.card} ${props.className}`}>
       <div className={styles.productImg}>
-        <ImgProduct img={props.img} />
+        <ImgProduct img={props.img} className={styles.img} off={props.off} />
       </div>
-      <DataProduct className={styles.dataProduct} />
+      <DataProduct className={styles.dataProduct} off={props.off} />
     </div>
   );
 };

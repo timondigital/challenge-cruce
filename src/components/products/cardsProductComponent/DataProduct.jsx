@@ -4,15 +4,13 @@ import styles from "./dataProduct.module.scss";
 import { useState } from "react";
 
 const DataCard = (props) => {
-  const [off, setOff] = useState(true);
+  const [off, setOff] = useState(props.off);
 
   return (
     <div className={`${styles.dataContent} ${props.className}`}>
       <div className={styles.dataGroup}>
         <h2 className={`${styles.title} title`}>Funko</h2>
-        <h5 className={styles.description}>
-          Funko POP | Game Of Thrones - Daen...
-        </h5>
+        <h5 className={styles.description}>Mochila Madalyn Floral</h5>
       </div>
       <div className={styles.priceGroup}>
         <div className={styles.fee}>6 Cuotas s/interés</div>

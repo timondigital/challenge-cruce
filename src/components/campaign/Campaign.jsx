@@ -4,7 +4,7 @@ import imgPrimary from "../../img/products/img1.png";
 import imgSecondary from "../../img/products/img2.png";
 import imgProduct from "../../img/products/backpack.png";
 import CardProduct from "../products/cardProduct/CardProduct";
-
+import BtnShop from "../buttons/btnShop/BtnShop";
 import styles from "./campaign.module.scss";
 import DataCard from "../products/cardsProductComponent/DataProduct";
 import BtnGroup from "../buttons/btnGroup/BtnGroup";
@@ -32,7 +32,8 @@ const Campaign = () => {
             alt="imagen producto"
           />
         </div>
-        <DataCard />
+        <DataCard className={styles.dataCard} text="" />
+        <BtnShop className={`${styles.btnShop}`} text="Agregar" />
         <div className={styles.footerProduct}>
           <div className={styles.pagination}>1 de 3</div>
           <BtnGroup />
