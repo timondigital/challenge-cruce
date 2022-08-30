@@ -10,6 +10,7 @@ const EndIn = () => {
     <div className={styles.content}>
       <div className={styles.header}>
         <h2 className={`${styles.title} title`}> Termina en</h2>
+
         <div className={styles.time}>23:03:04</div>
         <div className={styles.timeLegend}>
           <div>HS</div>
@@ -18,18 +19,47 @@ const EndIn = () => {
         </div>
       </div>
 
-      <CardMostWanted product={product1} text={"Dinosaurio robot para armar"} />
-      <CardMostWanted product={product1} text={"Dinosaurio robot para armar"} />
+      <CardMostWanted
+        product={product1}
+        text={"Dinosaurio robot para armar"}
+        price={1350}
+        offerPrice={"2580"}
+        off={true}
+        className={styles.cardMostWanted}
+      />
+      <CardMostWanted
+        product={product1}
+        text={"Dinosaurio robot para armar"}
+        price={1350}
+        offerPrice={"2580"}
+        off={true}
+        className={styles.cardMostWanted}
+      />
       <CardMostWanted
         product={product2}
         text={"Mochila de ToyStory Dinosaurio REX"}
+        price={1350}
+        offerPrice={"2580"}
+        off={false}
+        className={styles.cardMostWanted}
       />
 
       <CardMostWanted
         product={product2}
         text={"Mochila de ToyStory Dinosaurio REX"}
+        price={1350}
+        offerPrice={"2580"}
+        off={false}
+        className={styles.cardMostWanted}
       />
-      <CardMostWanted product={product1} text={"Dinosaurio robot para armar"} />
+      <CardMostWanted
+        product={product1}
+        text={"Dinosaurio robot para armar"}
+        price={1350}
+        offerPrice={"2580"}
+        off={true}
+        className={styles.cardMostWanted}
+      />
     </div>
   );
 };

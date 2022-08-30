@@ -40,6 +40,10 @@
 
         }
 
+        .btnShop {
+            display: none;
+        }
+
         .footerProduct {
             display: flex;
             justify-content: space-between;
@@ -84,9 +88,7 @@
 
             }
 
-            .btnShop {
-                display: none;
-            }
+
 
             .footerProduct {
                 width: 100%;

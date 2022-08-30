@@ -35,13 +35,15 @@
     .content {
         flex-wrap: wrap;
         justify-content: flex-end;
-        gap: 2rem;
+        gap: 6rem;
         flex-direction: row;
         margin: 5rem 0 2rem;
+        align-items: flex-start;
 
         .title {
             font-size: 4rem;
             right: -4rem;
+            top: -60px;
         }
 
         .img {
@@ -58,9 +60,9 @@
         margin: 7.8rem 0 2rem;
 
         .title {
-            font-size: 7rem;
+            font-size: 5.5rem;
             right: -6rem;
-            top: -45px;
+            top: -80px;
         }
 
         .img {
@@ -68,7 +70,7 @@
         }
 
         .cardProduct {
-            margin-top: 3rem;
+            // margin-top: 3rem;
         }
     }
 }

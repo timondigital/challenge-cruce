@@ -9,7 +9,7 @@ import BtnGroup from "../buttons/btnGroup/BtnGroup";
 import styles from "./brands.module.scss";
 const Brands = () => {
   return (
-    <>
+    <div className={styles.contentBrands}>
       <h3 className={` ${styles.title} title`}>Nuestras marcas</h3>
       <div className={styles.contentSlide}>
         <BtnGroup className={styles.btnGroup} />
@@ -40,7 +40,7 @@ const Brands = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

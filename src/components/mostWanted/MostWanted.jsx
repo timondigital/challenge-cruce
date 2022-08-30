@@ -8,20 +8,45 @@ import styles from "./mostWanted.module.scss";
 const MostWanted = () => {
   return (
     <div className={styles.content}>
-      <h2 className={`${styles.title} title`}>Lo más buscado</h2>
-
-      <CardMostWanted product={product1} text={"Dinosaurio robot para armar"} />
-      <CardMostWanted product={product1} text={"Dinosaurio robot para armar"} />
+      <div className={styles.contentTitle}>
+        <h2 className={`${styles.title} title`}>Lo más buscado</h2>
+      </div>
+      <CardMostWanted
+        product={product1}
+        text={"Dinosaurio robot para armar"}
+        price={1350}
+        offerPrice={"2580"}
+        off={true}
+      />
+      <CardMostWanted
+        product={product1}
+        text={"Dinosaurio robot para armar"}
+        price={1350}
+        offerPrice={"2580"}
+        off={true}
+      />
       <CardMostWanted
         product={product2}
         text={"Mochila de ToyStory Dinosaurio REX"}
+        price={1350}
+        offerPrice={"2580"}
+        off={false}
       />
 
       <CardMostWanted
         product={product2}
         text={"Mochila de ToyStory Dinosaurio REX"}
+        price={1350}
+        offerPrice={"2580"}
+        off={false}
       />
-      <CardMostWanted product={product1} text={"Dinosaurio robot para armar"} />
+      <CardMostWanted
+        product={product1}
+        text={"Dinosaurio robot para armar"}
+        price={1350}
+        offerPrice={"2580"}
+        off={true}
+      />
     </div>
   );
 };
