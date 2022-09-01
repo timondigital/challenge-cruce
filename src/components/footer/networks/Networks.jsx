@@ -2,9 +2,9 @@ import React from "react";
 import Icon from "../../icon/Icon";
 import styles from "./networks.module.scss";
 
-const Networks = () => {
+const Networks = (props) => {
   return (
-    <div className={styles.contentNetworks}>
+    <div className={`${styles.contentNetworks} ${props.className}`}>
       <div className={styles.networks}>
         <div className={styles.text}>INSTAGRAM</div>
         <Icon icon="instagram" />

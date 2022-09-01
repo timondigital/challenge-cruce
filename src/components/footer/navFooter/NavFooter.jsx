@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./navFooter.module.scss";
 
-const NavFooter = () => {
+const NavFooter = (props) => {
   return (
-    <div className={styles.contentNavFooter}>
+    <div className={`${styles.contentNavFooter} ${props.className}`}>
       <div className={styles.sections}>PREGUNTAS FREC.</div>
       <div className={styles.sections}>TÉRM & COND</div>
       <div className={styles.sections}>MIS PEDIDOS</div>

@@ -27,3 +27,34 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .contentNetworks {
+        width: auto;
+        // justify-content: right;
+
+        // padding-top: .3rem;
+        .networks {
+            // display: flex;
+            // gap: .7rem;
+            // justify-content: flex-end;
+            // align-items: center;
+            flex-direction: row-reverse;
+
+            .text {
+                // font-family: "neueBold";
+                // font-size: .6rem;
+                // color: $mediumGray;
+            }
+
+            svg {
+                // height: 1.3rem;
+                // width: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1365px) {}

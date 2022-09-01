@@ -24,10 +24,10 @@ const Brands = () => {
         </div>
       </div>
       <div className={styles.lineTwo}>
-        <div className={styles.icon}>
+        <div className={`${styles.icon} ${styles.afip}`}>
           <img src={afip} alt="icono" />
         </div>
-        <div className={styles.icon}>
+        <div className={`${styles.icon} ${styles.vtex}`}>
           <Icon icon="vtex" />
         </div>
         <div className={`${styles.icon} ${styles.cruce}`}>

@@ -14,9 +14,11 @@ const Footer = () => {
       <div className={styles.contentBtnUp}>
         <BtnUp />
       </div>
-      <Contact />
-      <Networks />
-      <NavFooter />
+      <div className={styles.content}>
+        <Contact className={styles.contact} />
+        <Networks className={styles.networks} />
+        <NavFooter className={styles.navFooter} />
+      </div>
       <Brands />
     </div>
   );

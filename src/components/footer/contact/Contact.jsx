@@ -1,9 +1,9 @@
 import React from "react";
 import Btn from "../../buttons/Btn";
 import styles from "./contact.module.scss";
-const Contact = () => {
+const Contact = (props) => {
   return (
-    <div className={styles.contactContent}>
+    <div className={`${styles.contactContent} ${props.className}`}>
       <div className={styles.text}>
         <div className={styles.text}>Contacto</div>
         <div className={styles.subText}>MAYORISTAS</div>
