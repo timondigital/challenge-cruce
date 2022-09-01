@@ -18,7 +18,9 @@ const CardMostWanted = (props) => {
         <p className={styles.text}>{props.text}</p>
         {off ? (
           <>
-            <div className={styles.offerPrice}>${props.offerPrice}</div>
+            <div className={styles.offerPrice}>
+              <del>${props.offerPrice}</del>
+            </div>
             <div className={styles.price}>${props.price}</div>
           </>
         ) : (

@@ -2,6 +2,7 @@
 
 .dataContent {
     // margin-top: .1rem;
+    text-align: left;
 
     .dataGroup {
 
@@ -37,7 +38,6 @@
             margin-top: .2rem;
 
             .priceListOffer {
-                text-decoration: line-through;
                 color: $mediumGray;
                 margin: .3rem;
             }

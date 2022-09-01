@@ -19,7 +19,9 @@ const DataCard = (props) => {
           Final:
           {off ? (
             <>
-              <span className={styles.priceListOffer}>$2.390</span>
+              <span className={styles.priceListOffer}>
+                <del>$2.390</del>
+              </span>
               <span className={styles.priceOffer}>$1.269</span>
             </>
           ) : (

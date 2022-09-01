@@ -3,7 +3,8 @@
 .card {
     padding: .5rem;
     font-family: "neue";
-    max-width: 220px;
+    width: 80%;
+    max-width: 12rem;
 
     &:nth-child(3) {
         padding-top: 4rem;
@@ -26,8 +27,7 @@
 
 @media screen and (min-width: 1024px) {
     .card {
-
-        max-width: 420px;
+        max-width: 20rem;
 
         .btnShop {
             display: flex;
