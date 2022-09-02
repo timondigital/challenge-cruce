@@ -35,12 +35,12 @@ const Products = () => {
         <CardProduct
           className={`${styles.product} ${styles.num4}`}
           img={product}
-          off={false}
+          off={true}
         />
         <CardProduct
           className={`${styles.product} ${styles.num5}`}
           img={product}
-          off={false}
+          off={true}
         />
         <CardProduct
           className={`${styles.product} ${styles.num6}`}

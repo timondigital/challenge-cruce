@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import useDetectedScreen from "../../hooks/useDetectedScreen.js";
 
 import CardProduct from "../products/cardProduct/CardProduct";
 import BtnGroup from "../buttons/btnGroup/BtnGroup";
@@ -8,23 +9,16 @@ import backpack from "../../img/products/backpack2.png";
 import styles from "./recommended.module.scss";
 
 const Recommended = () => {
-  const [widthScreen, setWidthScreen] = useState(window.innerWidth);
-  const [screen, setScreen] = useState("");
+  const sizeScreen = useDetectedScreen();
+  const [typeScreen, setTypeScreen] = useState(sizeScreen);
 
-  const desktopScreenWidth = 1366;
-  const tabletScreenWidth = 768;
   useEffect(() => {
-    if (widthScreen < tabletScreenWidth) {
-      setScreen("phone");
-    } else if (widthScreen < desktopScreenWidth) {
-      setScreen("tablet");
-    } else {
-      setScreen("desktop");
-    }
-  }, [widthScreen]);
+    setTypeScreen(sizeScreen);
+    cardProduct();
+  }, [sizeScreen]);
 
   const cardProduct = () => {
-    switch (screen) {
+    switch (typeScreen) {
       case "phone":
         return (
           <>
@@ -66,11 +60,6 @@ const Recommended = () => {
         return (
           <>
             <CardProduct
-              img={backpack}
-              off={false}
-              className={styles.cardProduct}
-            />
-            <CardProduct
               img={product}
               off={false}
               className={styles.cardProduct}
@@ -82,6 +71,11 @@ const Recommended = () => {
             />
             <CardProduct
               img={product}
+              off={true}
+              className={styles.cardProduct}
+            />
+            <CardProduct
+              img={backpack}
               off={false}
               className={styles.cardProduct}
             />

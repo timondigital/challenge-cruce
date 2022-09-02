@@ -3,7 +3,6 @@
 .content {
     margin: 2.5rem 0 1.5rem;
 
-
     .contentHeader {
         .title {
             color: $black;
@@ -32,7 +31,7 @@
 
         .cardProduct {
             text-align: center;
-            width: 30%;
+            width: 50%;
             max-width: 12rem;
         }
     }
@@ -66,44 +65,28 @@
 
 @media screen and (min-width: 1024px) {
     .content {
-        // margin: 1rem 0;
-
 
         .contentHeader {
             display: flex;
             align-items: flex-end;
-
             gap: 1rem;
 
             .title {
-                // color: $black;
                 width: auto;
                 margin-bottom: .5rem;
-
             }
 
             .allView {
-                // font-family: "neueBold";
-                // font-size: .65em;
                 color: $mediumGray;
             }
         }
 
-        .contentProduct {
-            // display: flex;
-            // justify-content: space-evenly;
-            // margin: 1rem 0 .5rem;
-        }
+        .contentProduct {}
 
         .newsFooter {
-            // display: flex;
-            // justify-content: space-between;
-            // align-items: flex-end;
             margin-top: 2rem;
 
-            .pagination {
-                // font-size: .9rem;
-            }
+            .pagination {}
         }
     }
 }

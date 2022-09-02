@@ -6,7 +6,7 @@
      row-gap: 1.7rem;
      justify-content: center;
      align-items: center;
-     max-width: 750px;
+     max-width: 900px;
      margin: 1.4rem auto;
 
      .contentTitle {
@@ -23,7 +23,7 @@
      .content {
          .contentTitle {
              width: 30%;
-             max-width: 15rem;
+             max-width: 17rem;
 
              .title {
                  margin-left: 1.5rem;
@@ -35,6 +35,9 @@
 
  @media screen and (min-width: 1024px) {
      .content {
+         justify-content: space-between;
+         max-width: 1000px;
+
          .contentTitle {
              .title {}
          }

@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import useDetectedScreen from "../../../hooks/useDetectedScreen.js";
+
 import Search from "../../search/Search";
 
 //styles
@@ -14,17 +16,20 @@ import EndIn from "../../endsIn/EndIn";
 import Recommended from "../../recommended/Recommended";
 
 const Home = () => {
-  const screenWidth = window.screen.width;
-  const whidtTablet = 768;
-  // console.log(screenWidth >= whidtTablet);
+  const sizeScreen = useDetectedScreen();
+  const [typeScreen, setTypeScreen] = useState(sizeScreen);
+
+  useEffect(() => {
+    setTypeScreen(sizeScreen);
+  }, [sizeScreen]);
 
   return (
     <div className={styles.home}>
       <Search />
-      {screenWidth >= whidtTablet ? <InfoSlide /> : null}
+      {typeScreen != "phone" ? <InfoSlide /> : null}
       <Products />
       <Brands />
-      {screenWidth >= whidtTablet ? null : <InfoSlide />}
+      {typeScreen != "phone" ? null : <InfoSlide />}
       <ToyOfDay />
       <MostWanted />
       <News />

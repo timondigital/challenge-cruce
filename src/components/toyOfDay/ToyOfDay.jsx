@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import useDetectedScreen from "../../hooks/useDetectedScreen.js";
 
 import video from "../../img/video/video.png";
 
@@ -8,20 +9,17 @@ import CardProduct from "../products/cardProduct/CardProduct";
 
 import styles from "./toyOfDay.module.scss";
 const ToyOfDay = () => {
-  const [widthScreen, setWidthScreen] = useState(window.innerWidth);
+  const sizeScreen = useDetectedScreen();
+  const [typeScreen, setTypeScreen] = useState(sizeScreen);
 
-  const desktopScreenWidth = 1366;
-  const tabletScreenWidth = 768;
-
-  // useEffect(() => {
-  //   sethiddenMenu(true);
-  // }, [widthScreen]);
-  //  ver como usar setWidthScreen() cuando se cambia el tamaño de pantalla
+  useEffect(() => {
+    setTypeScreen(sizeScreen);
+  }, [sizeScreen]);
 
   return (
     <div className={styles.content}>
       <h2 className={styles.title}>Juguete del día</h2>
-      {widthScreen < tabletScreenWidth ? (
+      {typeScreen == "phone" ? (
         <>
           <img
             className={styles.img}

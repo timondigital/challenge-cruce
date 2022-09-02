@@ -88,8 +88,8 @@
     }
   }
 }
-@media screen and (min-width: 1024px) {}
-@media screen and (min-width: 1365px) {
+
+@media screen and (min-width: 1024px) {
   .header {
     padding: 0 1%;
     height: 96px;
@@ -103,3 +103,5 @@
     }
   }
 }
+
+@media screen and (min-width: 1365px) {}

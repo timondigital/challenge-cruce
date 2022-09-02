@@ -20,8 +20,8 @@
             color: $white;
             top: 25%;
             left: 25%;
-            // transform: translate(-50%, -50%);
             transform: rotate(-20deg);
+            z-index: 5;
 
             span {
                 font-weight: normal;

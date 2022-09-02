@@ -15,7 +15,7 @@
         height: 5rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
 
         .text {
             font-size: .8rem;
@@ -43,12 +43,13 @@
 @media screen and (min-width: 768px) {
     .content {
         width: 30%;
-        max-width: 15rem;
+        max-width: 17rem;
 
         .productImg {}
 
         .contentData {
             width: 70%;
+            justify-content: space-between;
 
             .text {}
 

@@ -22,6 +22,7 @@
 
     .img {
         width: 100%;
+        max-width: 500px;
         position: relative;
     }
 
@@ -34,11 +35,11 @@
 @media screen and (min-width: 768px) {
     .content {
         flex-wrap: wrap;
-        justify-content: flex-end;
-        gap: 6rem;
+        justify-content: space-evenly;
+        // gap: 4rem;
         flex-direction: row;
         margin: 5rem 0 2rem;
-        align-items: flex-start;
+        align-items: center;
 
         .title {
             font-size: 4rem;
@@ -46,18 +47,25 @@
             top: -60px;
         }
 
+        .cardProduct {
+            width: 25%;
+        }
+
         .img {
             width: 60%;
             justify-self: right;
         }
 
-        .cardProductHorizontal {}
+
     }
 }
 
 @media screen and (min-width: 1024px) {
     .content {
         margin: 7.8rem 0 2rem;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 0;
 
         .title {
             font-size: 5.5rem;
@@ -66,11 +74,13 @@
         }
 
         .img {
-            width: 72%;
+            width: 75%;
+            max-width: 800px;
         }
 
         .cardProduct {
-            // margin-top: 3rem;
+            width: 25%;
+            max-width: 15rem;
         }
     }
 }
@@ -78,6 +88,7 @@
 @media screen and (min-width: 1365px) {
     .content {
         margin: 11rem 0 2rem;
+        justify-content: space-evenly;
 
         .title {
             font-size: 7rem;
@@ -86,10 +97,11 @@
 
         .img {
             width: 73%;
+            max-width: 1200px;
         }
 
         .cardProduct {
-            margin-top: 3rem;
+            width: 18%;
             max-width: 300px;
 
             img {

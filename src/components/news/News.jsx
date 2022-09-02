@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import useDetectedScreen from "../../hooks/useDetectedScreen.js";
 
 import CardProduct from "../products/cardProduct/CardProduct";
 import BtnGroup from "../buttons/btnGroup/BtnGroup";
@@ -10,29 +10,18 @@ import styles from "./news.module.scss";
 import { useEffect } from "react";
 
 const News = () => {
-  const [widthScreen, setWidthScreen] = useState(window.innerWidth);
-  const [screen, setScreen] = useState("");
-
-  const desktopScreenWidth = 1366;
-  const tabletScreenWidth = 768;
+  const sizeScreen = useDetectedScreen();
+  const [typeScreen, setTypeScreen] = useState(sizeScreen);
 
   useEffect(() => {
-    if (widthScreen < tabletScreenWidth) {
-      setScreen("phone");
-    } else if (widthScreen < desktopScreenWidth) {
-      setScreen("tablet");
-    } else {
-      setScreen("desktop");
-    }
-  }, [widthScreen]);
-
-  // useEffect(() => {
-  //   console.log("cambio pantalla");
-  // }, [window.innerWidth]);
+    setTypeScreen(sizeScreen);
+    cardProduct();
+  }, [sizeScreen]);
 
   const cardProduct = () => {
-    switch (screen) {
+    switch (typeScreen) {
       case "phone":
+        console.log(sizeScreen);
         return (
           <>
             <CardProduct
@@ -89,7 +78,7 @@ const News = () => {
             />
             <CardProduct
               img={product}
-              off={false}
+              off={true}
               className={styles.cardProduct}
             />
           </>

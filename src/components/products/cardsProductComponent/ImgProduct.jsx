@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 import offer from "../../../img/offer.png";
 import styles from "./imgProduct.module.scss";
 
 const ImgCard = (props) => {
-  const [off, setOff] = useState(props.off);
+  const off = props.off;
   return (
     <div className={`${styles.imgContent} ${props.className}`}>
       <img

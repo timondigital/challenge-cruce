@@ -50,6 +50,8 @@
             align-items: flex-end;
             margin-top: .5rem;
             width: 100%;
+            max-width: 400px;
+            padding-left: 2rem;
 
             .pagination {
                 font-size: .95rem;
@@ -91,7 +93,10 @@
 
 
             .footerProduct {
+
+                margin-top: 2rem;
                 width: 100%;
+                padding-left: 0rem;
 
                 .pagination {}
             }
