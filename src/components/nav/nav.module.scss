@@ -52,11 +52,14 @@
         }
 
         .btnGroup {
+            display: flex;
+            flex-direction: column;
 
             .btn {
                 color: $mediumGray;
                 width: 100%;
                 cursor: pointer;
+                text-decoration: none;
 
                 &:hover {
                     color: $black;

@@ -21,17 +21,18 @@ const News = () => {
   const cardProduct = () => {
     switch (typeScreen) {
       case "phone":
-        console.log(sizeScreen);
         return (
           <>
             <CardProduct
               img={product}
               off={false}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
             <CardProduct
               img={product}
               off={false}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
           </>
@@ -43,16 +44,19 @@ const News = () => {
             <CardProduct
               img={backpack}
               off={false}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
             <CardProduct
               img={product}
               off={false}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
             <CardProduct
               img={backpack}
               off={false}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
           </>
@@ -64,21 +68,25 @@ const News = () => {
             <CardProduct
               img={backpack}
               off={false}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
             <CardProduct
               img={product}
               off={false}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
             <CardProduct
               img={backpack}
               off={false}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
             <CardProduct
               img={product}
               off={true}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
           </>

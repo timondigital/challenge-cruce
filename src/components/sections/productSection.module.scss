@@ -1,0 +1,59 @@
+@import "../../variables.scss";
+
+.content {
+    padding: .5rem .75rem;
+    width: 100%;
+    display: grid;
+    position: relative;
+
+    .rutes {
+        padding: 1.5rem 2.2rem;
+        color: $mediumGray;
+        font-family: "inter";
+        font-size: .98rem;
+
+        strong {
+            color: $black;
+            font-family: "inter";
+            font-weight: bold;
+        }
+    }
+
+    .bannerFunko {
+        position: relative;
+        width: 120%;
+        right: 10%;
+        margin: 2rem auto 2.5rem;
+
+        .imgFunkoCollection {
+            width: 100%;
+        }
+    }
+
+    .contentProducts {
+        .cardProductHorizontal {
+            margin-bottom: 1.8rem;
+
+            >div:first-of-type {
+                width: 66%;
+
+                .img {
+                    width: 90%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .btnUp {
+        position: fixed;
+        bottom: 0;
+        right: 50%;
+        translate: 50%;
+    }
+}

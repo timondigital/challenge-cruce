@@ -1,0 +1,56 @@
+@import "../../variables.scss";
+
+.filter {
+    position: relative;
+    margin: 0 .7rem .5rem;
+
+    .filterIcon {
+        height: 1rem;
+        color: $black;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-left: .5rem
+    }
+
+    .arrowIcon {
+        width: 2rem;
+        height: 2rem;
+        color: $black;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: .2rem;
+        padding: .6rem .5rem;
+
+        &:hover {
+            color: $orange;
+        }
+
+        &:active {
+            color: $black;
+        }
+    }
+
+    .filterInput {
+        width: 100%;
+        font-size: 1rem;
+        font-family: "inter";
+        color: $black;
+        padding: .4rem;
+        padding-left: 2rem;
+        border-radius: 6px;
+        border: $mediumGray solid 2px;
+
+        &::placeholder {
+            color: $black;
+            font-weight: 400;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1365px) {}

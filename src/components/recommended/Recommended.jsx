@@ -25,11 +25,13 @@ const Recommended = () => {
             <CardProduct
               img={product}
               off={false}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
             <CardProduct
               img={product}
               off={false}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
           </>
@@ -41,16 +43,19 @@ const Recommended = () => {
             <CardProduct
               img={backpack}
               off={false}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
             <CardProduct
               img={product}
               off={false}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
             <CardProduct
               img={backpack}
               off={false}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
           </>
@@ -62,21 +67,25 @@ const Recommended = () => {
             <CardProduct
               img={product}
               off={false}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
             <CardProduct
               img={backpack}
               off={false}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
             <CardProduct
               img={product}
               off={true}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
             <CardProduct
               img={backpack}
               off={false}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
             />
           </>

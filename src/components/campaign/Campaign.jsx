@@ -32,7 +32,10 @@ const Campaign = () => {
             alt="imagen producto"
           />
         </div>
-        <DataCard className={styles.dataCard} text="" />
+        <DataCard
+          className={styles.dataCard}
+          description="Funko POP | Game Of Thrones - Daenerys 25"
+        />
         <BtnShop className={`${styles.btnShop}`} text="Agregar" />
         <div className={styles.footerProduct}>
           <div className={styles.pagination}>1 de 3</div>

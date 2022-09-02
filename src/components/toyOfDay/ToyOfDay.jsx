@@ -29,6 +29,7 @@ const ToyOfDay = () => {
           <CardProductHorizontal
             img={product}
             off={true}
+            description="Funko POP | Game Of Thrones - Daenerys 25"
             className={styles.cardProductHorizontal}
           />
         </>
@@ -37,6 +38,7 @@ const ToyOfDay = () => {
           <CardProduct
             img={product}
             className={styles.cardProduct}
+            description="Funko POP | Game Of Thrones - Daenerys 25"
             off={true}
           />
           <img

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import hotSale from "../../img/hotsale_btn.png";
 import styles from "./nav.module.scss";
@@ -24,12 +25,19 @@ const Nav = (props) => {
         <div className={styles.sectionGroup}>
           <h2 className={styles.title}>Categorías</h2>
           <div className={styles.btnGroup}>
-            <div className={styles.btn}>LOL</div>
-            <div className={styles.btn}>CryBabies</div>
-            <div className={styles.btn}>Funko</div>
-            <div className={`${styles.btn} ${styles.hotsale}`}>
+            <Link className={styles.btn} to="/">
+              LOL
+            </Link>
+            <Link className={styles.btn} to="/">
+              CryBabies
+            </Link>
+            <Link className={styles.btn} to="/productsSections">
+              Funko
+            </Link>
+
+            <Link className={`${styles.btn} ${styles.hotsale}`} to="/">
               <img src={hotSale} alt="hot sale" />
-            </div>
+            </Link>
           </div>
         </div>
       </div>

@@ -10,7 +10,7 @@ const DataCard = (props) => {
     <div className={`${styles.dataContent} ${props.className}`}>
       <div className={styles.dataGroup}>
         <h2 className={`${styles.title} title`}>Funko</h2>
-        <h5 className={styles.description}>Mochila Madalyn Floral</h5>
+        <h5 className={styles.description}>{props.description}</h5>
       </div>
       <div className={styles.priceGroup}>
         <div className={styles.fee}>6 Cuotas s/interés</div>

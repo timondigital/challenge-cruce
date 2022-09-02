@@ -48,7 +48,7 @@ const Header = () => {
         </div>
         <div className={styles.shop}>
           <Icon icon="shopping" className={styles.shoppingIcon} />
-          <div className={styles.numProduct}>3</div>
+          <sub className={styles.numProduct}>3</sub>
         </div>
       </div>
     </header>

@@ -20,31 +20,37 @@ const Products = () => {
         <CardProduct
           className={`${styles.product} ${styles.num1}`}
           img={product}
+          description="Funko POP | Game Of Thrones - Daenerys 25"
           off={true}
         />
         <CardProduct
           className={`${styles.product} ${styles.num2}`}
           img={product}
+          description="Funko POP | Game Of Thrones - Daenerys 25"
           off={false}
         />
         <CardProduct
           className={`${styles.product} ${styles.num3}`}
           img={product}
+          description="Funko POP | Game Of Thrones - Daenerys 25"
           off={false}
         />
         <CardProduct
           className={`${styles.product} ${styles.num4}`}
           img={product}
+          description="Funko POP | Game Of Thrones - Daenerys 25"
           off={true}
         />
         <CardProduct
           className={`${styles.product} ${styles.num5}`}
           img={product}
+          description="Funko POP | Game Of Thrones - Daenerys 25"
           off={true}
         />
         <CardProduct
           className={`${styles.product} ${styles.num6}`}
           img={product}
+          description="Funko POP | Game Of Thrones - Daenerys 25"
           off={false}
         />
       </div>
