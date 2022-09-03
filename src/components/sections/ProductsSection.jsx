@@ -6,6 +6,7 @@ import Filter from "../filter/Filter";
 import SortBy from "../sortBy/SortBy";
 import CardProductHorizontal from "../products/cardProductHorizontal/CardProductHorizontal";
 import BtnUp from "../buttons/btnUp/BtnUp";
+import BtnPagination from "../buttons/btnPagination/BtnPagination";
 //images
 import funkoCollection from "../../img/products/banner_listadocollection.png";
 import producto from "../../img/products/product1.png";
@@ -86,6 +87,7 @@ const ProductsSection = () => {
           off={false}
         />
       </div>
+      <BtnPagination />
       <BtnUp className={styles.btnUp} />
     </div>
   );
