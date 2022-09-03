@@ -17,8 +17,18 @@ import styles from "./productSection.module.scss";
 const ProductsSection = () => {
   return (
     <div className={styles.content}>
-      <div className={styles.rutes}>
-        Inicio / Juguetes / <strong>Funko Pop</strong>
+      <div className={styles.routes}>
+        <Link to="/" className={styles.route}>
+          Inicio
+        </Link>
+        <div className={styles.route}>/</div>
+        <Link to="/" className={styles.route}>
+          Juguetes
+        </Link>
+        <div className={styles.route}>/</div>
+        <Link to="/productsSections" className={styles.route}>
+          Funko Pop
+        </Link>
       </div>
       <Filter />
       <SortBy />
@@ -87,7 +97,7 @@ const ProductsSection = () => {
           off={false}
         />
       </div>
-      <BtnPagination />
+      <BtnPagination className={styles.btnPagination} />
       <BtnUp className={styles.btnUp} />
     </div>
   );

@@ -5,9 +5,9 @@ import Icon from "../../icon/Icon";
 //styles
 import styles from "./btnPagination.module.scss";
 
-const BtnPagination = () => {
+const BtnPagination = (props) => {
   return (
-    <div className={styles.contentPagination}>
+    <div className={`${styles.contentPagination} ${props.className}`}>
       <div className={styles.iconContent}>
         <Icon icon="arrow_left" className={`${styles.icon} ${styles.left}`} />
       </div>

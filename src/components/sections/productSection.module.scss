@@ -3,36 +3,65 @@
 .content {
     padding: .5rem .75rem;
     width: 100%;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
+    justify-content: flex-end;
 
-    .rutes {
-        padding: 1.5rem 2.2rem;
+    .routes {
+        padding: 1.5rem 0 1.7rem 2rem;
         color: $mediumGray;
         font-family: "inter";
-        font-size: .98rem;
+        font-size: .97rem;
+        display: flex;
+        width: 100%;
+        margin-right: auto;
 
-        strong {
+        .route:last-child {
             color: $black;
-            font-family: "inter";
             font-weight: bold;
+        }
+
+        .route {
+            margin: 0 .23rem;
+            text-decoration: none;
+            color: $mediumGray;
+            font-family: "inter";
+
+            &:hover {
+                color: $black;
+            }
+
+            &:active {
+                color: $orange;
+            }
         }
     }
 
     .bannerFunko {
         position: relative;
-        width: 120%;
-        right: 10%;
-        margin: 2rem auto 2.5rem;
+        width: 100%;
+        margin: 2.4rem auto;
+        height: 28vw;
+        max-height: 255px;
 
         .imgFunkoCollection {
-            width: 100%;
+            width: 118%;
+            position: absolute;
+            right: -10%;
         }
     }
 
     .contentProducts {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
         .cardProductHorizontal {
             margin-bottom: 1.8rem;
+            max-width: 300px;
+            top: 0;
 
             >div:first-of-type {
                 width: 66%;
@@ -44,9 +73,7 @@
                         width: 100%;
                     }
                 }
-
             }
-
         }
     }
 
@@ -57,3 +84,66 @@
         translate: 50%;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .content {
+
+        .routes {
+            width: 50%;
+
+
+            .route {}
+        }
+
+        .bannerFunko {}
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(auto);
+
+        .routes {
+            padding: 1.5rem 0 1.7rem 2rem;
+            display: flex;
+            width: 100%;
+            grid-column: 1/2;
+            grid-row: 2/3;
+
+            .route {
+                margin: 0 .23rem;
+
+            }
+        }
+
+        .bannerFunko {
+            margin: 2.4rem auto 1rem;
+            grid-column: 1/4;
+            grid-row: 1/2;
+            text-align: center;
+
+            .imgFunkoCollection {
+                max-width: 1050px;
+                width: 100%;
+                right: 0;
+                position: relative;
+            }
+        }
+
+        .contentProducts {
+            grid-column: 1/4;
+            grid-row: 3/4;
+
+            .cardProduct {}
+        }
+
+        .btnPagination {
+            grid-column: 1/4;
+            grid-row: 4/5;
+        }
+    }
+}
+
+@media screen and (min-width: 1366px) {}
