@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/challenge-cruce/static/css/main.d7973853.css",
+    "main.js": "/challenge-cruce/static/js/main.42e0345f.js",
+    "static/media/banner_listadocollection.png": "/challenge-cruce/static/media/banner_listadocollection.49a88b55bbbf738a4faa.png",
+    "static/media/img1.png": "/challenge-cruce/static/media/img1.fca900091f1dd8ed53de.png",
+    "static/media/backpack2.png": "/challenge-cruce/static/media/backpack2.438258292ae0c8eb918c.png",
+    "static/media/video.png": "/challenge-cruce/static/media/video.4a07b431eaa933263815.png",
+    "static/media/NeueMachina-Regular.otf": "/challenge-cruce/static/media/NeueMachina-Regular.6c408aeebce449ab7d74.otf",
+    "static/media/NeueMachina-Ultrabold.otf": "/challenge-cruce/static/media/NeueMachina-Ultrabold.07d4eef9a71d90303bbf.otf",
+    "static/media/NeueMachina-Light.otf": "/challenge-cruce/static/media/NeueMachina-Light.e1fb3b2574d18010b9ff.otf",
+    "static/media/backpack.png": "/challenge-cruce/static/media/backpack.522bb3e2a3b660e5b907.png",
+    "static/media/img2.png": "/challenge-cruce/static/media/img2.fbfdb56b550b187336dc.png",
+    "static/media/product1.png": "/challenge-cruce/static/media/product1.ba320e3088a78d92939d.png",
+    "index.html": "/challenge-cruce/index.html",
+    "main.d7973853.css.map": "/challenge-cruce/static/css/main.d7973853.css.map",
+    "main.42e0345f.js.map": "/challenge-cruce/static/js/main.42e0345f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7973853.css",
+    "static/js/main.42e0345f.js"
+  ]
+}
