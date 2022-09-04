@@ -1,0 +1,89 @@
+@import "../../variables.scss";
+
+.content {
+    width: 50%;
+    max-width: 12rem;
+    display: flex;
+    align-items: center;
+
+    .productImg {
+        width: 50%;
+    }
+
+    .contentData {
+        width: 50%;
+        height: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .text {
+            font-size: .8rem;
+        }
+
+        .offerPrice {
+            color: $mediumGray;
+            position: relative;
+            top: .4rem;
+        }
+
+        .price {
+            color: $red;
+        }
+
+        .offerPrice,
+        .price {
+            font-weight: bold;
+            font-size: .9rem;
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        width: 30%;
+        max-width: 17rem;
+
+        .productImg {}
+
+        .contentData {
+            width: 70%;
+            justify-content: space-between;
+
+            .text {}
+
+            .offerPrice,
+            .price {
+                display: block;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1365px) {
+    .content {
+        width: 15%;
+        max-width: none;
+
+        .productImg {
+            width: 40%;
+        }
+
+        .contentData {
+            width: 60%;
+            margin-left: .5rem;
+
+            .text {}
+
+            .offerPrice,
+            .price {
+                display: block;
+            }
+
+        }
+    }
+}

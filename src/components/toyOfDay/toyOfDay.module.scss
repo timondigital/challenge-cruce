@@ -1,0 +1,114 @@
+@import "../../variables.scss";
+
+.content {
+    margin: 2.3rem 0 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    align-items: center;
+
+    .title {
+        color: $orange;
+        font-size: 2.7rem;
+        width: 100vw;
+        position: absolute;
+        top: -40px;
+        right: -15px;
+        font-family: arial;
+        font-weight: bold;
+    }
+
+    .img {
+        width: 100%;
+        max-width: 500px;
+        position: relative;
+    }
+
+    .cardProductHorizontal {
+        width: auto;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        // gap: 4rem;
+        flex-direction: row;
+        margin: 5rem 0 2rem;
+        align-items: center;
+
+        .title {
+            font-size: 4rem;
+            right: -4rem;
+            top: -60px;
+        }
+
+        .cardProduct {
+            width: 25%;
+        }
+
+        .img {
+            width: 60%;
+            justify-self: right;
+        }
+
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .content {
+        margin: 7.8rem 0 2rem;
+        flex-wrap: nowrap;
+        justify-content: center;
+        gap: 0;
+
+        .title {
+            font-size: 5.5rem;
+            right: -6rem;
+            top: -80px;
+        }
+
+        .img {
+            width: 75%;
+            max-width: 800px;
+        }
+
+        .cardProduct {
+            width: 25%;
+            max-width: 15rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1365px) {
+    .content {
+        margin: 11rem 0 2rem;
+        justify-content: space-evenly;
+
+        .title {
+            font-size: 7rem;
+            top: -100px;
+        }
+
+        .img {
+            width: 73%;
+            max-width: 1200px;
+        }
+
+        .cardProduct {
+            width: 18%;
+            max-width: 300px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+
+}

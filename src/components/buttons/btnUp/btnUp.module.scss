@@ -1,0 +1,39 @@
+@import "../../../variables.scss";
+
+.btn {
+    background: $yellow;
+    border-radius: 7.5rem 7.5rem 0 0;
+    width: 7.5rem;
+    height: 3.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    transition: ease .5s;
+
+    &:hover {
+        background: $black;
+        transition: ease .05s;
+        color: $yellow;
+    }
+
+    &:active {
+        -webkit-box-shadow: inset 0px 2px 5px 2px rgba($white, 0.5);
+        -moz-box-shadow: inset 0px 2px 5px 2px rgba($white, 0.5);
+        box-shadow: inset 0px 2px 5px 2px rgba($white, 0.5);
+        background: linear-gradient($yellow 88%, rgba(143, 105, 0, 0.8));
+        color: $black;
+        transition: ease .09s;
+    }
+
+
+    .icon {
+        height: 28%;
+    }
+
+    .text {
+        font-family: "neueBold";
+        font-size: .65rem;
+    }
+}

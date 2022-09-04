@@ -1,0 +1,62 @@
+ @import "../../variables.scss";
+
+ .content {
+     display: flex;
+     flex-wrap: wrap;
+     row-gap: 1.7rem;
+     justify-content: center;
+     align-items: center;
+     max-width: 900px;
+     margin: 1.4rem auto;
+
+     .contentTitle {
+         width: 50%;
+         max-width: 12rem;
+
+         .title {
+             color: $green;
+         }
+     }
+ }
+
+ @media screen and (min-width: 768px) {
+     .content {
+         .contentTitle {
+             width: 30%;
+             max-width: 17rem;
+
+             .title {
+                 margin-left: 1.5rem;
+                 max-width: 10rem;
+             }
+         }
+     }
+ }
+
+ @media screen and (min-width: 1024px) {
+     .content {
+         justify-content: space-between;
+         max-width: 1000px;
+
+         .contentTitle {
+             .title {}
+         }
+     }
+ }
+
+ @media screen and (min-width: 1365px) {
+     .content {
+         max-width: 100%;
+         justify-content: space-between;
+
+         .contentTitle {
+             max-width: 12rem;
+
+             .title {
+
+                 margin-left: 0;
+                 max-width: 10rem;
+             }
+         }
+     }
+ }

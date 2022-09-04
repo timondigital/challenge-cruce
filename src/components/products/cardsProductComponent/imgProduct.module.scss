@@ -1,0 +1,53 @@
+@import "../../../variables.scss";
+
+.imgContent {
+    position: relative;
+    text-align: center;
+
+    .productImg {
+        max-width: 10rem;
+        width: 100%;
+    }
+
+    .offer {
+        position: absolute;
+        width: 4.2rem;
+        bottom: 0;
+
+        .percentage {
+            position: absolute;
+            font-family: "neueBold";
+            color: $white;
+            top: 25%;
+            left: 25%;
+            transform: rotate(-20deg);
+            z-index: 5;
+
+            span {
+                font-weight: normal;
+                font-size: .8rem;
+            }
+        }
+
+        .imgOffer {
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .imgContent {
+
+        .productImg {
+            margin-bottom: .8rem;
+        }
+
+        .offer {
+            bottom: -2px;
+
+            .imgOffer {
+                width: 95%
+            }
+        }
+    }
+}

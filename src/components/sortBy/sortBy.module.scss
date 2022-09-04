@@ -1,0 +1,84 @@
+@import "../../variables.scss";
+
+.sortBy {
+    position: relative;
+    margin: .0rem .7rem .6rem;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+
+    &:hover .arrowIcon,
+    &:hover .sortByInput {
+        color: $black;
+    }
+
+    .arrowIcon {
+        width: 2rem;
+        height: 2rem;
+        color: $mediumGray;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: .2rem;
+        padding: .6rem .6rem;
+
+
+        &:active {
+            color: $orange;
+
+        }
+    }
+
+    .sortByInput {
+        width: 100%;
+        font-size: 1rem;
+        font-family: "inter";
+        color: $darkGray;
+        padding: .4rem;
+        border-radius: 3px;
+        border: $lightGray solid 2px;
+
+        &::placeholder {
+            opacity: 1;
+        }
+
+        &:hover {
+            &::placeholder {
+                color: $black;
+
+            }
+        }
+
+        &:focus,
+        &:focus-visible,
+        &:-moz-focusring {
+            outline: none;
+            border: 2px solid $orange;
+
+            &::placeholder {
+                color: $black;
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sortBy {
+        width: 20%;
+        max-width: 150px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sortBy {
+        width: 60%;
+        max-width: 250px;
+        grid-column: 3/4;
+        grid-row: 2/3;
+        align-self: center;
+        justify-self: end;
+    }
+}
+
+@media screen and (min-width: 1365px) {}

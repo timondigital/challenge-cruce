@@ -1,0 +1,35 @@
+@import "../../variables.scss";
+
+.alertMainUp {
+  background: $purple;
+  color: $white;
+  padding: 0.4rem;
+  font-size: 0.7rem;
+  font-family: "inter";
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .closeAlert {
+    padding: 5px;
+    cursor: pointer;
+
+    .closeIcon {
+      height: 0.75rem;
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .alertMainUp {
+    padding: 0.4rem 1.5rem;
+
+  }
+}
+
+@media screen and (min-width: 1365px) {}

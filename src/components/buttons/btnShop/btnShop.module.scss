@@ -1,0 +1,52 @@
+@import"../../../variables.scss";
+
+.content {
+    box-shadow: inset 0 0 0 2px $green;
+    border-radius: 6px;
+    padding: .4rem .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3.75rem;
+    margin-top: .8rem;
+    letter-spacing: 0.08rem;
+    transition: ease 0.3s;
+
+    .icon {
+        color: $green;
+        height: 1.3rem;
+        position: relative;
+        top: .1rem;
+    }
+
+    .text {
+        display: none;
+    }
+
+    &:hover {
+        width: 9rem;
+        gap: .7rem;
+        background: $green;
+        border: none;
+        transition: ease 0.5s;
+
+        .icon {
+            color: $white;
+        }
+
+        .text {
+            display: block;
+            font-family: "neueBold";
+            color: $white;
+            transition: ease .5s;
+        }
+
+    }
+
+    &:active {
+        box-shadow: inset 0px 2px 5px 2px rgba($white, 0.5);
+        background: linear-gradient($green 85%, #606D54);
+        transition: ease 0.1s;
+    }
+}

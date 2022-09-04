@@ -1,0 +1,107 @@
+@import "../../variables.scss";
+
+.header {
+  background: $white;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .cruceLogo {
+    height: 45px;
+    right: -8px;
+    position: relative;
+  }
+
+  .btnsRight {
+    display: flex;
+    align-items: center;
+    height: 50%;
+    margin: 3%;
+
+    .search,
+    .user,
+    .shop {
+      margin: 9px;
+      cursor: pointer;
+      border-radius: 50%;
+      height: 36px;
+      width: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        box-shadow: 0 3px 9px rgba(0, 0, 0, .15);
+        color: $orange;
+      }
+    }
+
+    .search {
+      border: 1px solid $gray;
+      display: none;
+
+
+      .searchIcon {
+        height: 15px;
+        color: $mediumGray;
+      }
+    }
+
+    .user {
+      display: none;
+
+      .userIcon {
+        height: 22px;
+      }
+    }
+
+    .shop {
+      margin-right: .9rem;
+      position: relative;
+
+      .shoppingIcon {
+        height: 22px;
+      }
+
+      .numProduct {
+        font-family: "neueBold";
+        color: $red;
+        font-size: 1rem;
+        line-height: 0.8rem;
+        position: absolute;
+        bottom: 5px;
+        right: -12px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    .btnsRight {
+
+      .search,
+      .user {
+        display: flex;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 0 1%;
+    height: 96px;
+
+    .nav {
+      display: flex;
+    }
+
+    .cruceLogo {
+      display: none !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1365px) {}

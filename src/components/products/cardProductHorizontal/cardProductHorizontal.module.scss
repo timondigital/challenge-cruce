@@ -1,0 +1,24 @@
+@import "../../../variables.scss";
+
+.card {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    position: relative;
+    top: -8px;
+    max-width: 400px;
+
+    .productImg {
+        width: 60%;
+
+        .img {
+            img {
+                width: 90%;
+            }
+        }
+    }
+
+    .dataProduct {
+        margin-top: .7rem;
+    }
+}

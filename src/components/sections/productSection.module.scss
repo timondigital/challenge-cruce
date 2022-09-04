@@ -1,0 +1,240 @@
+@import "../../variables.scss";
+
+.content {
+    padding: .5rem .75rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: flex-end;
+
+    .routes {
+        padding: 1.5rem 0 1.7rem 2rem;
+        color: $mediumGray;
+        font-family: "inter";
+        font-size: .97rem;
+        display: flex;
+        width: 100%;
+        margin-right: auto;
+
+        .route:last-child {
+            color: $black;
+            font-weight: bold;
+        }
+
+        .route {
+            margin: 0 .23rem;
+            text-decoration: none;
+            color: $mediumGray;
+            font-family: "inter";
+
+            &:hover {
+                color: $black;
+            }
+
+            &:active {
+                color: $orange;
+            }
+        }
+    }
+
+    .bannerFunko {
+        position: relative;
+        width: 100%;
+        margin: 2.4rem auto;
+        height: 28vw;
+        max-height: 255px;
+
+        .imgFunkoCollection {
+            width: 118%;
+            position: absolute;
+            right: -10%;
+        }
+    }
+
+    .contentProducts {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .cardProductHorizontal {
+            margin-bottom: 1.8rem;
+            max-width: 300px;
+            top: 0;
+
+            >div:first-of-type {
+                width: 66%;
+
+                .img {
+                    width: 90%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .btnUp {
+        position: fixed;
+        bottom: 0;
+        right: 50%;
+        translate: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .content {
+
+        .routes {
+            width: 50%;
+
+
+            .route {}
+        }
+
+        .bannerFunko {
+            text-align: center;
+
+            .imgFunkoCollection {
+                max-width: 950px;
+                position: relative;
+                width: 100%;
+                right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(auto);
+
+        .routes {
+            padding: 1.5rem 0 1.7rem 2rem;
+            display: flex;
+            width: 100%;
+            grid-column: 1/2;
+            grid-row: 2/3;
+
+            .route {
+                margin: 0 .23rem;
+
+            }
+        }
+
+        .bannerFunko {
+            margin: 2.4rem auto 1rem;
+            grid-column: 1/4;
+            grid-row: 1/2;
+
+            .imgFunkoCollection {
+                max-width: 1050px;
+            }
+        }
+
+        .contentProducts {
+            grid-column: 1/4;
+            grid-row: 3/4;
+            max-width: 1050px;
+            justify-content: flex-start;
+            margin-bottom: 1rem;
+
+            .cardProduct {
+                width: 30%;
+                margin: 0 1rem 2rem;
+
+                >div:first-of-type {
+
+                    &.img {
+
+                        img {
+                            max-width: 18rem;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .btnPagination {
+            grid-column: 1/4;
+            grid-row: 4/5;
+            margin-top: 1rem;
+        }
+
+        .btnUp {
+            right: 5%;
+            translate: 0%;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 1366px) {
+    .content {
+
+        .routes {
+            padding-bottom: 1rem;
+            // display: flex;
+            // width: 100%;
+            // grid-column: 1/2;
+            // grid-row: 2/3;
+
+            .route {
+                // margin: 0 .23rem;
+            }
+        }
+
+        .bannerFunko {
+            margin: 3.4rem auto 1rem;
+            max-height: 320px;
+
+            .imgFunkoCollection {
+                max-width: 1250px;
+            }
+        }
+
+        .contentProducts {
+            max-width: 1200px;
+            margin-bottom: 2rem;
+
+            .cardProduct {
+                width: 30%;
+                max-width: 23.5rem;
+
+                // margin: 0 1rem 2rem;
+                >div:first-of-type {
+
+                    &.img {
+                        img {
+                            max-width: 27.5rem;
+                            margin-bottom: -1.5rem;
+                        }
+
+                        div {
+                            bottom: 21px;
+                            width: 3.9rem;
+
+                            div {
+                                left: 6%;
+                                top: 38%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .btnPagination {
+
+            margin-top: 2.5rem;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.home {
+  padding: 0.7rem .75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    padding: 0 2rem .7rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home {
+    padding: 0 3rem .7rem;
+  }
+}
+
+@media screen and (min-width: 1365px) {
+  .home {}
+}

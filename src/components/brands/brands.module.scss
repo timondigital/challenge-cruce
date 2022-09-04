@@ -1,0 +1,52 @@
+@import "../../variables.scss";
+
+.title {
+  color: $purple;
+}
+
+.contentSlide {
+  display: flex;
+  align-items: center;
+
+  .btnGroup {
+    display: none;
+  }
+
+  .contentBrands {
+    overflow: auto;
+    display: flex;
+    padding: .8rem 0;
+
+    .contentImg {
+      width: 50%;
+      background: $white;
+      margin: 0 1rem;
+      box-shadow: 0 3px 9px rgba(0, 0, 0, .15);
+      border-radius: 9px;
+      opacity: .5;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      img {
+        padding: .75rem 1.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 1024px) {
+  .contentSlide {
+    .btnGroup {
+      display: block;
+      min-width: 120px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (min-width: 1365px) {}

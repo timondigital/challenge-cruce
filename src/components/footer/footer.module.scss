@@ -1,0 +1,102 @@
+@import "../../variables.scss";
+
+.footerContent {
+    background: $white;
+    padding: .7rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .contentBtnUp {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+
+        .contact {
+            width: 100%;
+            justify-self: flex-end;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .footerContent {
+        flex-direction: row-reverse;
+
+        .contentBtnUp {}
+
+        .content {
+            margin: 2rem auto 1rem;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(max-content, 300px));
+            grid-template-areas: "networks navFooter contact contact";
+            justify-items: center;
+            align-items: center;
+            width: 90%;
+
+            .contact {
+                grid-area: contact;
+            }
+
+            .networks {
+                grid-area: networks;
+                justify-self: end;
+            }
+
+            .navFooter {
+                grid-area: navFooter;
+                justify-self: end;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footerContent {
+        flex-direction: row-reverse;
+
+        .contentBtnUp {}
+
+        .content {
+            // margin: 2rem auto 1rem;
+            // display: grid;
+            grid-template-columns: repeat(3, minmax(max-content, 300px));
+            grid-template-areas: "networks navFooter contact";
+            // justify-items: center;
+            // align-items: center;
+            // width: 90%;
+            max-width: 500px;
+            padding: 0 .1rem;
+
+
+            .contact {
+                justify-self: end;
+            }
+
+            .networks {
+                justify-self: start;
+            }
+
+            .navFooter {
+                justify-self: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1365px) {
+    .footerContent {
+        margin-bottom: 3.3rem;
+    }
+
+}
