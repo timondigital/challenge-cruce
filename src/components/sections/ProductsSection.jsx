@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import useDetectedScreen from "../../hooks/useDetectedScreen.js";
+
 import { Link } from "react-router-dom";
 
 //components
@@ -13,8 +15,16 @@ import producto from "../../img/products/product1.png";
 
 //styles
 import styles from "./productSection.module.scss";
+import CardProduct from "../products/cardProduct/CardProduct.jsx";
 
 const ProductsSection = () => {
+  const sizeScreen = useDetectedScreen();
+  const [typeScreen, setTypeScreen] = useState(sizeScreen);
+
+  useEffect(() => {
+    setTypeScreen(sizeScreen);
+  }, [sizeScreen]);
+
   return (
     <div className={styles.content}>
       <div className={styles.routes}>
@@ -40,62 +50,126 @@ const ProductsSection = () => {
         />
       </div>
       <div className={styles.contentProducts}>
-        <CardProductHorizontal
-          className={styles.cardProductHorizontal}
-          classNameImg={styles.img}
-          description="Funko POP | Game Of Thrones - Daenerys 25"
-          img={producto}
-          off={true}
-        />
-        <CardProductHorizontal
-          className={styles.cardProductHorizontal}
-          classNameImg={styles.img}
-          description="Funko POP | Game Of Thrones - Daenerys 25"
-          img={producto}
-          off={false}
-        />
-        <CardProductHorizontal
-          className={styles.cardProductHorizontal}
-          classNameImg={styles.img}
-          description="Funko POP | Game Of Thrones - Daenerys 25"
-          img={producto}
-          off={false}
-        />
-        <CardProductHorizontal
-          className={styles.cardProductHorizontal}
-          classNameImg={styles.img}
-          description="Funko POP | Game Of Thrones - Daenerys 25"
-          img={producto}
-          off={false}
-        />{" "}
-        <CardProductHorizontal
-          className={styles.cardProductHorizontal}
-          classNameImg={styles.img}
-          description="Funko POP | Game Of Thrones - Daenerys 25"
-          img={producto}
-          off={true}
-        />
-        <CardProductHorizontal
-          className={styles.cardProductHorizontal}
-          classNameImg={styles.img}
-          description="Funko POP | Game Of Thrones - Daenerys 25"
-          img={producto}
-          off={false}
-        />
-        <CardProductHorizontal
-          className={styles.cardProductHorizontal}
-          classNameImg={styles.img}
-          description="Funko POP | Game Of Thrones - Daenerys 25"
-          img={producto}
-          off={true}
-        />
-        <CardProductHorizontal
-          className={styles.cardProductHorizontal}
-          classNameImg={styles.img}
-          description="Funko POP | Game Of Thrones - Daenerys 25"
-          img={producto}
-          off={false}
-        />
+        {typeScreen != "desktop" ? (
+          <>
+            <CardProductHorizontal
+              className={styles.cardProductHorizontal}
+              classNameImg={styles.img}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
+              img={producto}
+              off={true}
+            />
+            <CardProductHorizontal
+              className={styles.cardProductHorizontal}
+              classNameImg={styles.img}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
+              img={producto}
+              off={false}
+            />
+            <CardProductHorizontal
+              className={styles.cardProductHorizontal}
+              classNameImg={styles.img}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
+              img={producto}
+              off={false}
+            />
+            <CardProductHorizontal
+              className={styles.cardProductHorizontal}
+              classNameImg={styles.img}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
+              img={producto}
+              off={false}
+            />{" "}
+            <CardProductHorizontal
+              className={styles.cardProductHorizontal}
+              classNameImg={styles.img}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
+              img={producto}
+              off={true}
+            />
+            <CardProductHorizontal
+              className={styles.cardProductHorizontal}
+              classNameImg={styles.img}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
+              img={producto}
+              off={false}
+            />
+            <CardProductHorizontal
+              className={styles.cardProductHorizontal}
+              classNameImg={styles.img}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
+              img={producto}
+              off={true}
+            />
+            <CardProductHorizontal
+              className={styles.cardProductHorizontal}
+              classNameImg={styles.img}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
+              img={producto}
+              off={false}
+            />
+          </>
+        ) : (
+          <>
+            <CardProduct
+              className={styles.cardProduct}
+              classNameImg={styles.img}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
+              img={producto}
+              off={true}
+            />
+            <CardProduct
+              className={styles.cardProduct}
+              classNameImg={styles.img}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
+              img={producto}
+              off={false}
+            />
+            <CardProduct
+              className={styles.cardProduct}
+              classNameImg={styles.img}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
+              img={producto}
+              off={false}
+              inStock={false}
+            />
+            <CardProduct
+              className={styles.cardProduct}
+              classNameImg={styles.img}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
+              img={producto}
+              off={true}
+            />
+            <CardProduct
+              className={styles.cardProduct}
+              classNameImg={styles.img}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
+              img={producto}
+              off={false}
+            />
+            <CardProduct
+              className={styles.cardProduct}
+              classNameImg={styles.img}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
+              img={producto}
+              off={false}
+            />
+            <CardProduct
+              className={styles.cardProduct}
+              classNameImg={styles.img}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
+              img={producto}
+              off={true}
+            />
+            <CardProduct
+              className={styles.cardProduct}
+              classNameImg={styles.img}
+              description="Funko POP | Game Of Thrones - Daenerys 25"
+              img={producto}
+              off={true}
+            />
+          </>
+        )}
       </div>
       <BtnPagination className={styles.btnPagination} />
       <BtnUp className={styles.btnUp} />
