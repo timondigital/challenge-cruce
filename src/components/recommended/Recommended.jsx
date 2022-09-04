@@ -12,11 +12,6 @@ const Recommended = () => {
   const sizeScreen = useDetectedScreen();
   const [typeScreen, setTypeScreen] = useState(sizeScreen);
 
-  useEffect(() => {
-    setTypeScreen(sizeScreen);
-    cardProduct();
-  }, [sizeScreen]);
-
   const cardProduct = () => {
     switch (typeScreen) {
       case "phone":
@@ -91,8 +86,16 @@ const Recommended = () => {
           </>
         );
         break;
+      default:
+        <> </>;
     }
   };
+
+  useEffect(() => {
+    setTypeScreen(sizeScreen);
+    cardProduct();
+  }, [sizeScreen]);
+
   return (
     <div className={styles.content}>
       <div className={styles.contentHeader}>

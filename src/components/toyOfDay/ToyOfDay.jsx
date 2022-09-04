@@ -19,7 +19,7 @@ const ToyOfDay = () => {
   return (
     <div className={styles.content}>
       <h2 className={styles.title}>Juguete del día</h2>
-      {typeScreen == "phone" ? (
+      {typeScreen === "phone" ? (
         <>
           <img
             className={styles.img}

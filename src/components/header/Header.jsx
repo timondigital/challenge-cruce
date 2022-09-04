@@ -30,7 +30,7 @@ const Header = () => {
       <nav
         className={styles.nav}
         onClick={
-          typeScreen == "phone" || typeScreen == "tablet"
+          typeScreen === "phone" || typeScreen === "tablet"
             ? handlehiddenMenu
             : null
         }

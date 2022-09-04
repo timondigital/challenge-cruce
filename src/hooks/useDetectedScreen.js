@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import useWindowSize from "./useWindowSize.js";
 const useDetectedScreen = () => {
   let screen = "";

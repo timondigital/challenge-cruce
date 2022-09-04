@@ -1,12 +1,11 @@
 import React from "react";
-
 import marvel from "../../img/brands/marvel.png";
 import disney from "../../img/brands/disney.png";
 import funko from "../../img/brands/funko.png";
 import lol from "../../img/brands/lol.png";
 import BtnGroup from "../buttons/btnGroup/BtnGroup";
-
 import styles from "./brands.module.scss";
+
 const Brands = () => {
   return (
     <div className={styles.contentBrands}>

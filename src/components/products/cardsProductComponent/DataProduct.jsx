@@ -1,10 +1,9 @@
 import React from "react";
 
 import styles from "./dataProduct.module.scss";
-import { useState } from "react";
 
 const DataCard = (props) => {
-  const [off, setOff] = useState(props.off);
+  const off = props.off;
 
   return (
     <div className={`${styles.dataContent} ${props.className}`}>

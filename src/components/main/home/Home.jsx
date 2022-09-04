@@ -26,10 +26,10 @@ const Home = () => {
   return (
     <div className={styles.home}>
       <Search />
-      {typeScreen != "phone" ? <InfoSlide /> : null}
+      {typeScreen !== "phone" ? <InfoSlide /> : null}
       <Products />
       <Brands />
-      {typeScreen != "phone" ? null : <InfoSlide />}
+      {typeScreen !== "phone" ? null : <InfoSlide />}
       <ToyOfDay />
       <MostWanted />
       <News />

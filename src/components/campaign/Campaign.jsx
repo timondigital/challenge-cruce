@@ -3,7 +3,6 @@ import React from "react";
 import imgPrimary from "../../img/products/img1.png";
 import imgSecondary from "../../img/products/img2.png";
 import imgProduct from "../../img/products/backpack.png";
-import CardProduct from "../products/cardProduct/CardProduct";
 import BtnShop from "../buttons/btnShop/BtnShop";
 import styles from "./campaign.module.scss";
 import DataCard from "../products/cardsProductComponent/DataProduct";

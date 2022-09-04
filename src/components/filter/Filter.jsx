@@ -9,11 +9,6 @@ const Filter = () => {
   const sizeScreen = useDetectedScreen();
   const [typeScreen, setTypeScreen] = useState(sizeScreen);
 
-  useEffect(() => {
-    iconArrow();
-    setTypeScreen(sizeScreen);
-  }, [sizeScreen]);
-
   const iconArrow = () => {
     switch (typeScreen) {
       case "phone":
@@ -30,8 +25,16 @@ const Filter = () => {
             <Icon icon="down" className={styles.arrowIcon} />
           </>
         );
+        break;
+      default:
+        <></>;
     }
   };
+
+  useEffect(() => {
+    iconArrow();
+    setTypeScreen(sizeScreen);
+  }, [sizeScreen]);
 
   return (
     <div className={styles.filter}>

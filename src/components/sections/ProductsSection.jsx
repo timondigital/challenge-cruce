@@ -50,7 +50,7 @@ const ProductsSection = () => {
         />
       </div>
       <div className={styles.contentProducts}>
-        {typeScreen != "desktop" ? (
+        {typeScreen !== "desktop" ? (
           <>
             <CardProductHorizontal
               className={styles.cardProductHorizontal}
