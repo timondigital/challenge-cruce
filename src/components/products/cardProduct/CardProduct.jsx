@@ -1,11 +1,12 @@
 import React from "react";
 
-import DataProduct from "../cardsProductComponent/DataProduct";
-import ImgProduct from "../cardsProductComponent/ImgProduct";
+import DataProduct from "../componentCardsProduct/DataProduct";
+import ImgProduct from "../componentCardsProduct/ImgProduct";
 import BtnShop from "../../buttons/btnShop/BtnShop";
 import styles from "./cardProduct.module.scss";
 
 const CardProduct = (props) => {
+  const inStock = props.inStock;
   return (
     <div className={`${styles.card} ${props.className}`}>
       <ImgProduct
@@ -21,7 +22,11 @@ const CardProduct = (props) => {
         brand={props.brand}
         inStock={props.inStock}
       />
-      <BtnShop className={`${styles.btnShop}`} text="Agregar" />
+      {inStock ? (
+        <BtnShop className={`${styles.btnShop}`} text="Agregar" />
+      ) : (
+        <></>
+      )}
     </div>
   );
 };

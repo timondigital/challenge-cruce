@@ -1,7 +1,7 @@
 import React from "react";
 
-import DataProduct from "../cardsProductComponent/DataProduct";
-import ImgProduct from "../cardsProductComponent/ImgProduct";
+import DataProduct from "../componentCardsProduct/DataProduct";
+import ImgProduct from "../componentCardsProduct/ImgProduct";
 
 import styles from "./cardProductHorizontal.module.scss";
 
