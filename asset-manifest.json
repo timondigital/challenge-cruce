@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/challenge-cruce/static/css/main.77d622ae.css",
-    "main.js": "/challenge-cruce/static/js/main.588e35cb.js",
+    "main.css": "/challenge-cruce/static/css/main.94f8681d.css",
+    "main.js": "/challenge-cruce/static/js/main.b1bafbf1.js",
     "static/media/banner_listadocollection.png": "/challenge-cruce/static/media/banner_listadocollection.49a88b55bbbf738a4faa.png",
     "static/media/img1.png": "/challenge-cruce/static/media/img1.fca900091f1dd8ed53de.png",
     "static/media/backpack2.png": "/challenge-cruce/static/media/backpack2.438258292ae0c8eb918c.png",
@@ -12,12 +12,19 @@
     "static/media/backpack.png": "/challenge-cruce/static/media/backpack.522bb3e2a3b660e5b907.png",
     "static/media/img2.png": "/challenge-cruce/static/media/img2.fbfdb56b550b187336dc.png",
     "static/media/product1.png": "/challenge-cruce/static/media/product1.ba320e3088a78d92939d.png",
+    "static/media/product3.png": "/challenge-cruce/static/media/product3.7b73a16d9acd17c4e559.png",
+    "static/media/product5.png": "/challenge-cruce/static/media/product5.c01766c2a17f9cc7bdec.png",
+    "static/media/product6.png": "/challenge-cruce/static/media/product6.8dc345cf05e5aa767cad.png",
+    "static/media/product4.png": "/challenge-cruce/static/media/product4.12d9c27cb9e1a5be1602.png",
+    "static/media/product7.png": "/challenge-cruce/static/media/product7.bc130276c89b04ec23c3.png",
+    "static/media/product2.png": "/challenge-cruce/static/media/product2.08336165893b9fd116cf.png",
+    "static/media/product8.png": "/challenge-cruce/static/media/product8.ee700b2d6231f3a2f91f.png",
     "index.html": "/challenge-cruce/index.html",
-    "main.77d622ae.css.map": "/challenge-cruce/static/css/main.77d622ae.css.map",
-    "main.588e35cb.js.map": "/challenge-cruce/static/js/main.588e35cb.js.map"
+    "main.94f8681d.css.map": "/challenge-cruce/static/css/main.94f8681d.css.map",
+    "main.b1bafbf1.js.map": "/challenge-cruce/static/js/main.b1bafbf1.js.map"
   },
   "entrypoints": [
-    "static/css/main.77d622ae.css",
-    "static/js/main.588e35cb.js"
+    "static/css/main.94f8681d.css",
+    "static/js/main.b1bafbf1.js"
   ]
 }
