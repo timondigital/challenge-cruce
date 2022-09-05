@@ -3,10 +3,8 @@ import React from "react";
 import Icon from "../../icon/Icon";
 import cace from "../../../img/brands/cace.png";
 import ahora18 from "../../../img/brands/ahora18.png";
-import hotSale from "../../../img/brands/hotsaele.png";
+import hotSale from "../../../img/brands/hotsale.png";
 import afip from "../../../img/brands/afip.png";
-import vtex from "../../../img/brands/afip.png";
-import cruce from "../../../img/brands/afip.png";
 
 import styles from "./brands.module.scss";
 const Brands = () => {

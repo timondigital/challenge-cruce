@@ -42,7 +42,7 @@ const ProductsSection = () => {
       </div>
       <Filter />
       <SortBy />
-      <div className={styles.bannerFunko}>
+      <div className={styles.bannerFunko} id="inicio">
         <img
           className={styles.imgFunkoCollection}
           src={funkoCollection}

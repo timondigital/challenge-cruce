@@ -38,7 +38,7 @@ const Filter = () => {
 
   return (
     <div className={styles.filter}>
-      <Icon icon="star-full" className={styles.filterIcon} />
+      <Icon icon="filter" className={styles.filterIcon} />
       <input type="text" placeholder="Filtrar" className={styles.filterInput} />
       {iconArrow()}
     </div>

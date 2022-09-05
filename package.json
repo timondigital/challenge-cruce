@@ -13,7 +13,8 @@
     "react-icomoon": "^2.5.4",
     "react-router-dom": "^6.3.0",
     "sass": "^1.54.3",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "parser": "@babel/eslint-parser"
   },
   "devDependencies": {
     "react-scripts": "5.0.1"
