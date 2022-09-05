@@ -37,7 +37,6 @@ const MostWanted = () => {
         offerPrice={"2580"}
         off={false}
       />
-
       <CardMostWanted
         product={product2}
         text={"Mochila de ToyStory Dinosaurio REX"}

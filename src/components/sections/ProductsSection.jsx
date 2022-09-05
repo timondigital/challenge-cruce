@@ -55,7 +55,7 @@ const ProductsSection = () => {
         {typeScreen !== "desktop" ? (
           <>
             {products.map((product) =>
-              product.brand === "Funco" ? (
+              product.brand === "Funko" ? (
                 <CardProductHorizontal
                   className={styles.cardProductHorizontal}
                   classNameImg={styles.img}
