@@ -24,13 +24,13 @@ const News = () => {
           <>
             <CardProduct
               className={styles.cardProduct}
-              img={productImg(products[0].img)}
-              description={products[0].description}
-              off={products[0].off}
-              price={products[0].price}
-              priceOffer={products[0].priceOffer}
-              brand={products[0].brand}
-              inStock={products[0].inStock}
+              img={productImg(products[8].img)}
+              description={products[8].description}
+              off={products[8].off}
+              price={products[8].price}
+              priceOffer={products[8].priceOffer}
+              brand={products[8].brand}
+              inStock={products[8].inStock}
             />
             <CardProduct
               className={styles.cardProduct}
@@ -49,22 +49,34 @@ const News = () => {
         return (
           <>
             <CardProduct
-              img={backpack}
-              off={false}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
+              img={productImg(products[8].img)}
+              description={products[8].description}
+              off={products[8].off}
+              price={products[8].price}
+              priceOffer={products[8].priceOffer}
+              brand={products[8].brand}
+              inStock={products[8].inStock}
             />
             <CardProduct
-              img={product}
-              off={false}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
+              img={productImg(products[1].img)}
+              description={products[1].description}
+              off={products[1].off}
+              price={products[1].price}
+              priceOffer={products[1].priceOffer}
+              brand={products[1].brand}
+              inStock={products[1].inStock}
             />
             <CardProduct
-              img={backpack}
-              off={false}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
+              img={productImg(products[8].img)}
+              description={products[8].description}
+              off={products[8].off}
+              price={products[8].price}
+              priceOffer={products[8].priceOffer}
+              brand={products[8].brand}
+              inStock={products[8].inStock}
             />
           </>
         );
@@ -73,28 +85,44 @@ const News = () => {
         return (
           <>
             <CardProduct
-              img={backpack}
-              off={false}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
+              img={productImg(products[8].img)}
+              description={products[8].description}
+              off={products[8].off}
+              price={products[8].price}
+              priceOffer={products[8].priceOffer}
+              brand={products[8].brand}
+              inStock={products[8].inStock}
             />
             <CardProduct
-              img={product}
-              off={false}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
+              img={productImg(products[1].img)}
+              description={products[1].description}
+              off={products[1].off}
+              price={products[1].price}
+              priceOffer={products[1].priceOffer}
+              brand={products[1].brand}
+              inStock={products[1].inStock}
             />
             <CardProduct
-              img={backpack}
-              off={false}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
+              img={productImg(products[8].img)}
+              description={products[8].description}
+              off={products[8].off}
+              price={products[8].price}
+              priceOffer={products[8].priceOffer}
+              brand={products[8].brand}
+              inStock={products[8].inStock}
             />
             <CardProduct
-              img={product}
-              off={true}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
+              img={productImg(products[1].img)}
+              description={products[1].description}
+              off={products[1].off}
+              price={products[1].price}
+              priceOffer={products[1].priceOffer}
+              brand={products[1].brand}
+              inStock={products[1].inStock}
             />
           </>
         );

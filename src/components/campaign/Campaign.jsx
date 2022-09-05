@@ -30,18 +30,18 @@ const Campaign = () => {
         <div className={styles.contentImg}>
           <img
             className={styles.imgProduct}
-            src={productImg(products[0].img)}
+            src={productImg(products[9].img)}
             alt="imagen producto"
           />
         </div>
         <DataCard
           className={styles.dataCard}
-          off={products[0].off}
-          description={products[0].description}
-          price={products[0].price}
-          priceOffer={products[0].priceOffer}
-          brand={products[0].brand}
-          inStock={products[0].inStock}
+          off={products[9].off}
+          description={products[9].description}
+          price={products[9].price}
+          priceOffer={products[9].priceOffer}
+          brand={products[9].brand}
+          inStock={products[9].inStock}
         />
         <BtnShop className={`${styles.btnShop}`} text="Agregar" />
         <div className={styles.footerProduct}>

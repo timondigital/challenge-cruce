@@ -78,13 +78,32 @@
   },
   {
     "id": 8,
-    "classname": "num8",
     "img": "./product8.png",
     "brand": "Funko",
     "off": true,
     "priceOffer": 1269,
     "price": 2390,
     "description": "Funko POP | Game Of Thrones - Daenerys 25",
+    "inStock": true
+  },
+  {
+    "id": 9,
+    "img": "./backpack2.png",
+    "brand": "Jansport",
+    "off": false,
+    "priceOffer": 1269,
+    "price": 2390,
+    "description": "Mochila Madalyn Floral",
+    "inStock": true
+  },
+  {
+    "id": 10,
+    "img": "./backpack.png",
+    "brand": "Jansport",
+    "off": true,
+    "priceOffer": 1269,
+    "price": 2390,
+    "description": "Mochila Madalyn Floral",
     "inStock": true
   }
 ]

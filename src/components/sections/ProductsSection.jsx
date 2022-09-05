@@ -54,35 +54,43 @@ const ProductsSection = () => {
       <div className={styles.contentProducts}>
         {typeScreen !== "desktop" ? (
           <>
-            {products.map((product) => (
-              <CardProductHorizontal
-                className={styles.cardProductHorizontal}
-                classNameImg={styles.img}
-                description={product.description}
-                img={productImg(product.img)}
-                off={product.off}
-                price={product.price}
-                priceOffer={product.priceOffer}
-                brand={product.brand}
-                inStock={product.inStock}
-              />
-            ))}
+            {products.map((product) =>
+              product.brand === "Funco" ? (
+                <CardProductHorizontal
+                  className={styles.cardProductHorizontal}
+                  classNameImg={styles.img}
+                  description={product.description}
+                  img={productImg(product.img)}
+                  off={product.off}
+                  price={product.price}
+                  priceOffer={product.priceOffer}
+                  brand={product.brand}
+                  inStock={product.inStock}
+                />
+              ) : (
+                <></>
+              )
+            )}
           </>
         ) : (
           <>
-            {products.map((product) => (
-              <CardProduct
-                className={styles.cardProduct}
-                classNameImg={styles.img}
-                description={product.description}
-                img={productImg(product.img)}
-                off={product.off}
-                price={product.price}
-                priceOffer={product.priceOffer}
-                brand={product.brand}
-                inStock={product.inStock}
-              />
-            ))}
+            {products.map((product) =>
+              product.brand === "Funco" ? (
+                <CardProduct
+                  className={styles.cardProduct}
+                  classNameImg={styles.img}
+                  description={product.description}
+                  img={productImg(product.img)}
+                  off={product.off}
+                  price={product.price}
+                  priceOffer={product.priceOffer}
+                  brand={product.brand}
+                  inStock={product.inStock}
+                />
+              ) : (
+                <></>
+              )
+            )}
           </>
         )}
       </div>

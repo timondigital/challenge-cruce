@@ -14,13 +14,19 @@
       font-weight: normal;
       letter-spacing: -0.03rem;
       width: 90%;
-      // text-overflow: ellipsis;
-      // overflow: hidden;
+      height: 30px;
+      hyphens: auto;
+      word-break: break-all;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin-bottom: 0.3rem;
     }
   }
 
   .priceGroup {
-    margin-top: 0.2rem;
     display: flex;
     flex-direction: column;
 
@@ -52,6 +58,7 @@
 
       .priceOffer {
         font-weight: bold;
+        font-size: 1rem;
         color: $red;
       }
       &.outStock {

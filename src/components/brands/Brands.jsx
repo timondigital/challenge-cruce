@@ -1,11 +1,9 @@
 import React from "react";
-import marvel from "../../img/brands/marvel.png";
-import disney from "../../img/brands/disney.png";
-import funko from "../../img/brands/funko.png";
-import lol from "../../img/brands/lol.png";
+
 import BtnGroup from "../buttons/btnGroup/BtnGroup";
 import styles from "./brands.module.scss";
 
+const images = require.context("../../img/brands/", true);
 const Brands = () => {
   return (
     <div className={styles.contentBrands}>
@@ -14,28 +12,28 @@ const Brands = () => {
         <BtnGroup className={styles.btnGroup} />
         <div className={styles.contentBrands}>
           <div className={styles.contentImg}>
-            <img src={marvel} alt="logo MARVEL" />
+            <img src={images("./marvel.png")} alt="logo MARVEL" />
           </div>
           <div className={styles.contentImg}>
-            <img src={disney} alt="logo Disney" />
+            <img src={images("./disney.png")} alt="logo Disney" />
           </div>
           <div className={styles.contentImg}>
-            <img src={funko} alt="logo Funko" />
+            <img src={images("./funko.png")} alt="logo Funko" />
           </div>
           <div className={styles.contentImg}>
-            <img src={lol} alt="logo LOL" />
-          </div>{" "}
-          <div className={styles.contentImg}>
-            <img src={marvel} alt="logo MARVEL" />
+            <img src={images("./lol.png")} alt="logo LOL" />
           </div>
           <div className={styles.contentImg}>
-            <img src={disney} alt="logo Disney" />
+            <img src={images("./marvel.png")} alt="logo MARVEL" />
           </div>
           <div className={styles.contentImg}>
-            <img src={funko} alt="logo Funko" />
+            <img src={images("./disney.png")} alt="logo Disney" />
           </div>
           <div className={styles.contentImg}>
-            <img src={lol} alt="logo LOL" />
+            <img src={images("./funko.png")} alt="logo Funko" />
+          </div>
+          <div className={styles.contentImg}>
+            <img src={images("./lol.png")} alt="logo LOL" />
           </div>
         </div>
       </div>

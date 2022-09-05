@@ -3,7 +3,6 @@ import useDetectedScreen from "../../hooks/useDetectedScreen.js";
 
 import video from "../../img/video/video.png";
 
-import product from "../../img/products/product1.png";
 import CardProductHorizontal from "../products/cardProductHorizontal/CardProductHorizontal";
 import CardProduct from "../products/cardProduct/CardProduct";
 
@@ -50,7 +49,7 @@ const ToyOfDay = () => {
             price={products[0].price}
             priceOffer={products[0].priceOffer}
             brand={products[0].brand}
-            inStock={products[0].inStoc}
+            inStock={products[0].inStock}
           />
           <img
             className={styles.img}

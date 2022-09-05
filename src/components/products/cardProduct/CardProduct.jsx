@@ -15,6 +15,7 @@ const CardProduct = (props) => {
         className={`${styles.img} ${props.classNameImg}`}
       />
       <DataProduct
+        className={props.classNameData}
         off={props.off}
         description={props.description}
         price={props.price}

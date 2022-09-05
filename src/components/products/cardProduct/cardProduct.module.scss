@@ -1,38 +1,37 @@
 @import "../../../variables.scss";
 
 .card {
-    padding: .5rem;
-    font-family: "neue";
-    width: 80%;
-    max-width: 12rem;
+  padding: 0.5rem;
+  font-family: "neue";
+  width: 98%;
+  max-width: 12rem;
 
-    &:nth-child(3) {
-        padding-top: 4rem;
-    }
+  &:nth-child(3) {
+    padding-top: 4rem;
+  }
 
-    .btnShop {
-        display: none;
-    }
+  .btnShop {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .card {
-
-        &:nth-child(3) {
-            padding-top: 0.5rem
-        }
-
+  .card {
+    &:nth-child(3) {
+      padding-top: 0.5rem;
     }
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .card {
-        max-width: 20rem;
+  .card {
+    max-width: 20rem;
 
-        .btnShop {
-            display: flex;
-        }
+    .btnShop {
+      display: flex;
     }
+  }
 }
 
-@media screen and (min-width: 1365px) {}
+@media screen and (min-width: 1365px) {
+}
