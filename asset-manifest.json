@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/challenge-cruce/static/css/main.94f8681d.css",
-    "main.js": "/challenge-cruce/static/js/main.9bf3c70a.js",
+    "main.css": "/challenge-cruce/static/css/main.8c6aedd1.css",
+    "main.js": "/challenge-cruce/static/js/main.3514fa52.js",
     "static/media/banner_listadocollection.png": "/challenge-cruce/static/media/banner_listadocollection.49a88b55bbbf738a4faa.png",
     "static/media/img1.png": "/challenge-cruce/static/media/img1.fca900091f1dd8ed53de.png",
     "static/media/backpack2.png": "/challenge-cruce/static/media/backpack2.438258292ae0c8eb918c.png",
@@ -20,11 +20,11 @@
     "static/media/product2.png": "/challenge-cruce/static/media/product2.08336165893b9fd116cf.png",
     "static/media/product8.png": "/challenge-cruce/static/media/product8.ee700b2d6231f3a2f91f.png",
     "index.html": "/challenge-cruce/index.html",
-    "main.94f8681d.css.map": "/challenge-cruce/static/css/main.94f8681d.css.map",
-    "main.9bf3c70a.js.map": "/challenge-cruce/static/js/main.9bf3c70a.js.map"
+    "main.8c6aedd1.css.map": "/challenge-cruce/static/css/main.8c6aedd1.css.map",
+    "main.3514fa52.js.map": "/challenge-cruce/static/js/main.3514fa52.js.map"
   },
   "entrypoints": [
-    "static/css/main.94f8681d.css",
-    "static/js/main.9bf3c70a.js"
+    "static/css/main.8c6aedd1.css",
+    "static/js/main.3514fa52.js"
   ]
 }
