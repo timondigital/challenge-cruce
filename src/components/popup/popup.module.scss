@@ -1,65 +1,64 @@
- @import "../../variables.scss";
+@import "../../variables.scss";
 
- .content {
-     width: 60%;
-     max-width: 15rem;
-     position: fixed;
-     z-index: 500;
-     margin-left: 2rem;
-     bottom: 8%;
-     transition: ease 5s;
+.content {
+  width: 60%;
+  max-width: 15rem;
+  position: fixed;
+  z-index: 500;
+  margin-left: 2rem;
+  bottom: 8%;
+  transition: ease 5s;
 
-     &.hidden {
-         display: none;
-         transition: ease 5s;
-     }
+  &.hidden {
+    display: none;
+    transition: ease 5s;
+  }
 
-     .img {
-         width: 100%;
-     }
+  .img {
+    width: 100%;
+  }
 
-     .btnClose {
-         background: $white;
-         width: 1.5rem;
-         height: 1.5rem;
-         border-radius: 50%;
-         border: 2px solid $black;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         position: absolute;
-         top: 0;
-         right: 2.8%;
+  .btnClose {
+    background: $white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    border: 2px solid $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 2.8%;
 
-         svg {
-             width: 30%;
-         }
+    svg {
+      width: 30%;
+    }
+    &:hover {
+      border-color: $orange;
+    }
+  }
 
-         &:hover {
-             border-color: $orange;
-         }
-     }
+  .text {
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0 5%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 
-     .text {
-         font-weight: bold;
-         font-size: 1rem;
-         width: 100%;
-         padding: 0 5%;
-         position: absolute;
-         top: 20%;
-         left: 50%;
-         transform: translateX(-50%);
-         ;
-     }
+@media screen and (min-width: 768px) {
+}
 
- }
+@media screen and (min-width: 1024px) {
+  .content {
+    display: none;
+  }
+}
 
- @media screen and (min-width: 768px) {}
-
- @media screen and (min-width: 1024px) {
-     .content {
-         display: none;
-     }
- }
-
- @media screen and (min-width: 1365px) {}
+@media screen and (min-width: 1365px) {
+}

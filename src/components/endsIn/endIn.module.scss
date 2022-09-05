@@ -47,20 +47,11 @@
     .header {
       width: 30%;
       max-width: 15rem;
-
-      .title {
-      }
     }
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .content {
-    .header {
-      .title {
-      }
-    }
-  }
 }
 
 @media screen and (min-width: 1365px) {
@@ -70,9 +61,6 @@
 
     .header {
       max-width: 12rem;
-
-      .title {
-      }
     }
   }
 }

@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
 import useDetectedScreen from "../../hooks/useDetectedScreen.js";
+import products from "../../asset/constant/product.json";
 
-import video from "../../img/video/video.png";
-
+//components
 import CardProductHorizontal from "../products/cardProductHorizontal/CardProductHorizontal";
 import CardProduct from "../products/cardProduct/CardProduct";
 
-import products from "../../asset/constant/product.json";
+//images
+import video from "../../img/video/video.png";
+
+//styles
 import styles from "./toyOfDay.module.scss";
+
 const productImg = require.context("../../img/products", true);
 
 const ToyOfDay = () => {
@@ -54,7 +58,7 @@ const ToyOfDay = () => {
           <img
             className={styles.img}
             src={video}
-            alt="video promocion del día"
+            alt="video promoción del día"
           />
         </>
       )}

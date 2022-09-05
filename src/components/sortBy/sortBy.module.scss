@@ -21,7 +21,6 @@
     transform: translateY(-50%);
     right: 0.2rem;
     padding: 0.6rem 0.6rem;
-
     &:active {
       color: $orange;
     }
@@ -35,23 +34,19 @@
     padding: 0.4rem;
     border-radius: 3px;
     border: $lightGray solid 2px;
-
     &::placeholder {
       opacity: 1;
     }
-
     &:hover {
       &::placeholder {
         color: $black;
       }
     }
-
     &:focus,
     &:focus-visible,
     &:-moz-focusring {
       outline: none;
       border: 2px solid $orange;
-
       &::placeholder {
         color: $black;
       }

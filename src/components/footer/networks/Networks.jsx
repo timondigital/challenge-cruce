@@ -1,5 +1,9 @@
 import React from "react";
+
+//components
 import Icon from "../../icon/Icon";
+
+//styles
 import styles from "./networks.module.scss";
 
 const Networks = (props) => {

@@ -1,6 +1,10 @@
 import React from "react";
 
+//components
 import CardProduct from "./cardProduct/CardProduct";
+import Btn from "../buttons/Btn";
+
+//images
 import products from "../../asset/constant/product.json";
 import product1 from "../../img/products/product1.png";
 import product2 from "../../img/products/product2.png";
@@ -8,7 +12,6 @@ import product3 from "../../img/products/product3.png";
 import product4 from "../../img/products/product4.png";
 import product5 from "../../img/products/product5.png";
 import product6 from "../../img/products/product6.png";
-import Btn from "../buttons/Btn";
 
 //styles
 import styles from "./products.module.scss";
@@ -22,7 +25,7 @@ const Products = () => {
         </h3>
         <p>La colección más completa de Game of Thrones está en X</p>
         <Btn className={styles.btnBotton} text="Ver colección" />
-
+        {/* no alcance a resolver como hacer clases dinamicas al usar estilos module para poder usar map()... una pena...  */}
         <CardProduct
           className={`${styles.product} ${styles.num1}`}
           img={product1}
@@ -33,7 +36,6 @@ const Products = () => {
           brand={products[0].brand}
           inStock={products[0].inStock}
         />
-
         <CardProduct
           className={`${styles.product} ${styles.num2}`}
           img={product2}

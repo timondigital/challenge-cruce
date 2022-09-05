@@ -1,8 +1,13 @@
 import React from "react";
-import product1 from "../../img/products/dinno1.png";
-import product2 from "../../img/products/dinno2.png";
+
+//components
 import CardMostWanted from "./CardMostWanted";
 
+//images
+import product1 from "../../img/products/dinno1.png";
+import product2 from "../../img/products/dinno2.png";
+
+//styles
 import styles from "./mostWanted.module.scss";
 
 const MostWanted = () => {

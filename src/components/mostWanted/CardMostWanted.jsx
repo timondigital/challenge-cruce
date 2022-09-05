@@ -1,7 +1,6 @@
 import React from "react";
 
-import "./cardMostWanted.module.scss";
-
+//styles
 import styles from "./cardMostWanted.module.scss";
 
 const CardMostWanted = (props) => {

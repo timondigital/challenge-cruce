@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 
-import backgroud from "../../img/offer2.png";
+//components
 import Icon from "../icon/Icon";
 
+//images
+import backgroud from "../../img/offer2.png";
+
+//styles
 import styles from "./popup.module.scss";
-import { useState } from "react";
+
 const Popup = () => {
   const [hidden, setHidden] = useState(false);
   const handleHidden = () => setHidden(true);

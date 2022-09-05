@@ -1,14 +1,18 @@
 import React from "react";
+import products from "../../asset/constant/product.json";
 
-import imgPrimary from "../../img/products/img1.png";
-import imgSecondary from "../../img/products/img2.png";
-import imgProduct from "../../img/products/backpack.png";
+//components
 import BtnShop from "../buttons/btnShop/BtnShop";
-import styles from "./campaign.module.scss";
 import DataCard from "../products/componentCardsProduct/DataProduct";
 import BtnGroup from "../buttons/btnGroup/BtnGroup";
 
-import products from "../../asset/constant/product.json";
+//images
+import imgPrimary from "../../img/products/img1.png";
+import imgSecondary from "../../img/products/img2.png";
+
+//styles
+import styles from "./campaign.module.scss";
+
 const productImg = require.context("../../img/products", true);
 
 const Campaign = () => {

@@ -1,12 +1,14 @@
 import React from "react";
 
+//components
 import BtnUp from "../buttons/btnUp/BtnUp";
-
-import styles from "./footer.module.scss";
 import Contact from "./contact/Contact";
 import Networks from "./networks/Networks";
 import NavFooter from "./navFooter/NavFooter";
 import Brands from "./brands/Brands";
+
+//styles
+import styles from "./footer.module.scss";
 
 const Footer = () => {
   return (

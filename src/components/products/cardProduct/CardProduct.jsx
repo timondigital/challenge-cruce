@@ -1,8 +1,11 @@
 import React from "react";
 
+//components
 import DataProduct from "../componentCardsProduct/DataProduct";
 import ImgProduct from "../componentCardsProduct/ImgProduct";
 import BtnShop from "../../buttons/btnShop/BtnShop";
+
+//styles
 import styles from "./cardProduct.module.scss";
 
 const CardProduct = (props) => {

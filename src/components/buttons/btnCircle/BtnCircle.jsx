@@ -1,6 +1,9 @@
 import React from "react";
 
+//components
 import Icon from "../../icon/Icon";
+
+//styles
 import styles from "./btnCircle.module.scss";
 
 const BtnCircle = (props) => {

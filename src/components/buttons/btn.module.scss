@@ -12,14 +12,12 @@
   align-self: center;
   letter-spacing: 0.08rem;
   transition: ease 0.3s;
-
   &:hover {
     -webkit-box-shadow: inset 0px 0px 0px 0px transparent, 0 0 0 0 transparent;
     -moz-box-shadow: inset 0px 0px 0px 0px transparent, 0 0 0 0 transparent;
     box-shadow: inset 0px 0px 0px 0px transparent, 0 0 0 0 transparent;
     transition: ease 0.1s;
   }
-
   &:active {
     -webkit-box-shadow: inset 0px 2px 5px 2px rgba($white, 0.5);
     -moz-box-shadow: inset 0px 2px 5px 2px rgba($white, 0.5);

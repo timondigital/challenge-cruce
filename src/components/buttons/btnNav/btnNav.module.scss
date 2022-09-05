@@ -1,5 +1,5 @@
 .btnNav {
-  padding: 1rem .7rem .7rem;
+  padding: 1rem 0.7rem 0.7rem;
   margin: 10px;
   cursor: pointer;
   width: 2.5rem;
@@ -10,8 +10,13 @@
     height: 14px;
   }
 }
+@media screen and (min-width: 768px) {
+}
 
-@media screen and (min-width:1366px) {
+@media screen and (min-width: 1024px) {
+}
+
+@media screen and (min-width: 1366px) {
   .btnNav {
     cursor: default;
   }

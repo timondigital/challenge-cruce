@@ -1,6 +1,11 @@
 import React from "react";
+
+//components
 import Btn from "../../buttons/Btn";
+
+//styles
 import styles from "./contact.module.scss";
+
 const Contact = (props) => {
   return (
     <div className={`${styles.contactContent} ${props.className}`}>

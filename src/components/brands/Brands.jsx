@@ -1,9 +1,13 @@
 import React from "react";
 
+//components
 import BtnGroup from "../buttons/btnGroup/BtnGroup";
+
+//styles
 import styles from "./brands.module.scss";
 
 const images = require.context("../../img/brands/", true);
+
 const Brands = () => {
   return (
     <div className={styles.contentBrands}>

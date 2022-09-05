@@ -1,6 +1,9 @@
 import React from "react";
 
+//components
 import Btn from "../../buttons/Btn.jsx";
+
+//styles
 import styles from "./dataProduct.module.scss";
 
 const DataCard = (props) => {

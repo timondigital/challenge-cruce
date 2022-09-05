@@ -1,7 +1,11 @@
 import React from "react";
+
+//components
 import Icon from "../../icon/Icon";
-import styles from "./infoSlide.module.scss";
 import BtnCircle from "../../buttons/btnCircle/BtnCircle";
+
+//styles
+import styles from "./infoSlide.module.scss";
 
 const InfoSlide = () => {
   return (

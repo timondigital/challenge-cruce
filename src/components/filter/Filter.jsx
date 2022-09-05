@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import useDetectedScreen from "../../hooks/useDetectedScreen.js";
+
+//components
 import Icon from "../icon/Icon";
 
 //styles

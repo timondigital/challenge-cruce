@@ -1,49 +1,42 @@
 @import "../../../variables.scss";
 
 .contentPagination {
-    display: flex;
-    height: 2.25rem;
-    width: 100%;
-    justify-content: space-between;
-    margin: auto;
-    margin-bottom: 3.5rem;
-    max-width: 300px;
+  display: flex;
+  height: 2.25rem;
+  width: 100%;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 3.5rem;
+  max-width: 300px;
 
-    .iconContent {
-        width: 2.25rem;
+  .iconContent {
+    width: 2.25rem;
 
-        .icon {
-            margin: .75rem;
-
-            &:hover {
-                color: $black;
-            }
-
-            &:active {
-                color: $orange;
-            }
-
-        }
+    .icon {
+      margin: 0.75rem;
+      &:hover {
+        color: $black;
+      }
+      &:active {
+        color: $orange;
+      }
     }
+  }
 
-    .numContent {
-        color: $mediumGray;
-        padding: .4rem .79rem;
-        font-family: "neueBold";
-
-        &:hover {
-            color: $black;
-        }
-
-        &:active {
-            color: $orange;
-        }
-
-        &.active {
-            border-radius: 12px;
-            box-shadow: inset 0 0 0 2px $orange;
-            color: $black;
-
-        }
+  .numContent {
+    color: $mediumGray;
+    padding: 0.4rem 0.79rem;
+    font-family: "neueBold";
+    &:hover {
+      color: $black;
     }
+    &:active {
+      color: $orange;
+    }
+    &.active {
+      border-radius: 12px;
+      box-shadow: inset 0 0 0 2px $orange;
+      color: $black;
+    }
+  }
 }

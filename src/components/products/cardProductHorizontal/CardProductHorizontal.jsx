@@ -1,8 +1,10 @@
 import React from "react";
 
+//components
 import DataProduct from "../componentCardsProduct/DataProduct";
 import ImgProduct from "../componentCardsProduct/ImgProduct";
 
+//styles
 import styles from "./cardProductHorizontal.module.scss";
 
 const CardProductHorizontal = (props) => {

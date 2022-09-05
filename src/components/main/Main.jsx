@@ -1,11 +1,13 @@
 import React from "react";
+
+//components
 import Alert from "../alert/Alert";
 import Home from "./home/Home";
+import Popup from "../popup/Popup";
+import BtnWhatsapp from "../buttons/whatsapp/BtnWhatsapp";
 
 //styles
 import styles from "./main.module.scss";
-import Popup from "../popup/Popup";
-import BtnWhatsapp from "../buttons/whatsapp/BtnWhatsapp";
 
 const Main = () => {
   return (

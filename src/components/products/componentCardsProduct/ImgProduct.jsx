@@ -1,7 +1,9 @@
 import React from "react";
 
+//images
 import offer from "../../../img/offer.png";
-import constant from "../../../asset/constant/product.json";
+
+//styles
 import styles from "./imgProduct.module.scss";
 
 const ImgCard = (props) => {

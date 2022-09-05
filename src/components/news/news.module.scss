@@ -1,94 +1,86 @@
 @import "../../variables.scss";
 
 .content {
-    margin: 2.5rem 0 1.5rem;
+  margin: 2.5rem 0 1.5rem;
 
-    .contentHeader {
-        .title {
-            color: $black;
-            width: 50%;
-        }
-
-        .allView {
-            font-family: "neueBold";
-            font-size: .65em;
-            cursor: pointer;
-
-            &:hover {
-                color: $black;
-            }
-
-            &:active {
-                color: $orange;
-            }
-        }
+  .contentHeader {
+    .title {
+      color: $black;
+      width: 50%;
     }
 
-    .contentProduct {
-        display: flex;
-        justify-content: space-evenly;
-        margin: 1rem 0 .5rem;
-
-        .cardProduct {
-            text-align: center;
-            width: 50%;
-            max-width: 12rem;
-        }
+    .allView {
+      font-family: "neueBold";
+      font-size: 0.65em;
+      cursor: pointer;
+      &:hover {
+        color: $black;
+      }
+      &:active {
+        color: $orange;
+      }
     }
+  }
 
-    .newsFooter {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+  .contentProduct {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0 0.5rem;
 
-        .pagination {
-            font-size: .9rem;
-        }
+    .cardProduct {
+      text-align: center;
+      width: 50%;
+      max-width: 12rem;
     }
+  }
+
+  .newsFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .pagination {
+      font-size: 0.9rem;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .contentProduct {
-        .cardProduct {
-
-            div:nth-child(1) {
-
-                img {
-                    margin-left: 50%;
-                    translate: -50%;
-                    width: 100%;
-                }
-            }
+  .contentProduct {
+    .cardProduct {
+      div:nth-child(1) {
+        img {
+          margin-left: 50%;
+          translate: -50%;
+          width: 100%;
         }
+      }
     }
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .content {
+  .content {
+    .contentHeader {
+      display: flex;
+      align-items: flex-end;
+      gap: 1rem;
 
-        .contentHeader {
-            display: flex;
-            align-items: flex-end;
-            gap: 1rem;
+      .title {
+        width: auto;
+        margin-bottom: 0.5rem;
+      }
 
-            .title {
-                width: auto;
-                margin-bottom: .5rem;
-            }
-
-            .allView {
-                color: $mediumGray;
-            }
-        }
-
-        .contentProduct {}
-
-        .newsFooter {
-            margin-top: 2rem;
-
-            .pagination {}
-        }
+      .allView {
+        color: $mediumGray;
+      }
     }
+
+    .newsFooter {
+      margin-top: 2rem;
+    }
+  }
 }
 
-@media screen and (min-width: 1365px) {}
+@media screen and (min-width: 1365px) {
+}

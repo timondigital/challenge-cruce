@@ -12,11 +12,9 @@
       font-family: "neueBold";
       font-size: 0.65em;
       cursor: pointer;
-
       &:hover {
         color: $black;
       }
-
       &:active {
         color: $orange;
       }
@@ -32,20 +30,6 @@
       text-align: center;
       width: 50%;
       max-width: 12rem;
-      display: flex;
-      flex-direction: column;
-      height: 310px;
-      justify-content: space-between;
-
-      .img {
-        height: 62%;
-      }
-      .data {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 38%;
-      }
     }
   }
 
@@ -91,19 +75,8 @@
       }
     }
 
-    .contentProduct {
-      .cardProduct {
-        .img {
-          // height: 50%;
-        }
-      }
-    }
-
     .recommendedFooter {
       margin-top: 2rem;
-
-      .pagination {
-      }
     }
   }
 }

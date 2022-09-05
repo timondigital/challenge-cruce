@@ -25,11 +25,9 @@
     transform: translateY(-50%);
     right: 0.2rem;
     padding: 0.6rem 0.5rem;
-
     &:hover {
       color: $orange;
     }
-
     &:active {
       color: $black;
     }
@@ -43,19 +41,16 @@
     padding: 0.4rem 2rem;
     border-radius: 6px;
     border: $mediumGray solid 2px;
-
     &::placeholder {
       color: $black;
       font-weight: 400;
       opacity: 1;
     }
-
     &:focus,
     &:focus-visible,
     &:-moz-focusring {
       outline: none;
       border: 2px solid $orange;
-
       &::placeholder {
         color: $black;
       }
@@ -72,14 +67,6 @@
       display: none !important;
     }
 
-    .arrowIcon {
-      &:hover {
-      }
-
-      &:active {
-      }
-    }
-
     .filterInput {
       font-family: "neueBold";
       border: none;
@@ -93,9 +80,6 @@
       &:focus-visible,
       &:-moz-focusring {
         border: none;
-
-        &::placeholder {
-        }
       }
     }
   }

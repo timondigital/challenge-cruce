@@ -1,5 +1,9 @@
 import React from "react";
+
+//components
 import Icon from "../../icon/Icon";
+
+//styles
 import styles from "./btnShop.module.scss";
 const BtnShop = (props) => {
   return (

@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+
+//component
 import Icon from "../icon/Icon";
 
 //styles

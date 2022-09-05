@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import useDetectedScreen from "../../hooks/useDetectedScreen.js";
+import products from "../../asset/constant/product.json";
 
+//components
 import CardProduct from "../products/cardProduct/CardProduct";
 import BtnGroup from "../buttons/btnGroup/BtnGroup";
-import product from "../../img/products/product1.png";
-import backpack from "../../img/products/backpack2.png";
-import products from "../../asset/constant/product.json";
 
 //styles
 import styles from "./recommended.module.scss";

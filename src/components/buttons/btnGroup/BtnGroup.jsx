@@ -1,6 +1,11 @@
 import React from "react";
+
+//components
 import BtnCircle from "../btnCircle/BtnCircle";
+
+//styles
 import styles from "./btnGroup.module.scss";
+
 const BtnGroup = (props) => {
   return (
     <div className={`${styles.contentButtons} ${props.className}`}>

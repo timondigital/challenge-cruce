@@ -1,19 +1,18 @@
 .contentButtons {
-    width: 120px;
+  width: 120px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+
+  .contentBtnCircle {
     height: 48px;
-    display: flex;
-    justify-content: space-between;
+    width: 48px;
+    position: relative;
 
-    .contentBtnCircle {
-        height: 48px;
-        width: 48px;
-        position: relative;
-
-        div {
-            svg {
-                width: 9px;
-            }
-        }
+    div {
+      svg {
+        width: 9px;
+      }
     }
-
+  }
 }

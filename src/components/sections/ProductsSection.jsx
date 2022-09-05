@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useDetectedScreen from "../../hooks/useDetectedScreen.js";
+import products from "../../asset/constant/product.json";
 
 //components
 import Filter from "../filter/Filter";
@@ -8,14 +9,13 @@ import SortBy from "../sortBy/SortBy";
 import CardProductHorizontal from "../products/cardProductHorizontal/CardProductHorizontal";
 import BtnUp from "../buttons/btnUp/BtnUp";
 import BtnPagination from "../buttons/btnPagination/BtnPagination";
+import CardProduct from "../products/cardProduct/CardProduct.jsx";
 
 //images
 import funkoCollection from "../../img/products/banner_listadocollection.png";
-import products from "../../asset/constant/product.json";
 
 //styles
-import styles from "./productSection.module.scss";
-import CardProduct from "../products/cardProduct/CardProduct.jsx";
+import styles from "./productsSection.module.scss";
 
 const productImg = require.context("../../img/products", true);
 

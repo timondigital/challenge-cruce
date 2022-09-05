@@ -17,7 +17,7 @@ root.render(
           <main style={{ padding: "1rem" }}>
             <p>
               Ups! No encontramos esta página... por favor regresa al home
-              <Link to="/"> Volver a home </Link>
+              <Link to="/challenge-cruce/"> Volver a home </Link>
             </p>
           </main>
         }

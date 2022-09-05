@@ -1,60 +1,44 @@
 @import "../../../variables.scss";
 
 .contentNetworks {
-    width: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.95rem;
+  margin: 0.8rem 0;
+  padding-right: 1rem;
+
+  .networks {
     display: flex;
-    flex-direction: column;
-    gap: .95rem;
-    margin: .8rem 0;
-    padding-right: 1rem;
+    gap: 0.7rem;
+    justify-content: flex-end;
+    align-items: center;
 
-
-    .networks {
-        display: flex;
-        gap: .7rem;
-        justify-content: flex-end;
-        align-items: center;
-
-        .text {
-            font-family: "neueBold";
-            font-size: .6rem;
-            color: $mediumGray;
-        }
-
-        svg {
-            height: 1.3rem;
-            width: 1.5rem;
-        }
+    .text {
+      font-family: "neueBold";
+      font-size: 0.6rem;
+      color: $mediumGray;
     }
+
+    svg {
+      height: 1.3rem;
+      width: 1.5rem;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .contentNetworks {
-        width: auto;
-        // justify-content: right;
+  .contentNetworks {
+    width: auto;
 
-        // padding-top: .3rem;
-        .networks {
-            // display: flex;
-            // gap: .7rem;
-            // justify-content: flex-end;
-            // align-items: center;
-            flex-direction: row-reverse;
-
-            .text {
-                // font-family: "neueBold";
-                // font-size: .6rem;
-                // color: $mediumGray;
-            }
-
-            svg {
-                // height: 1.3rem;
-                // width: 1.5rem;
-            }
-        }
+    .networks {
+      flex-direction: row-reverse;
     }
+  }
 }
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+}
 
-@media screen and (min-width: 1365px) {}
+@media screen and (min-width: 1365px) {
+}

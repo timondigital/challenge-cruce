@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import useDetectedScreen from "../../../hooks/useDetectedScreen.js";
 
+//components
 import Search from "../../search/Search";
-
-//styles
-import styles from "./home.module.scss";
 import Products from "../../products/Products";
 import Brands from "../../brands/Brands";
 import InfoSlide from "../../slides/info/InfoSlide";
@@ -14,6 +12,9 @@ import News from "../../news/News";
 import Campaign from "../../campaign/Campaign";
 import EndIn from "../../endsIn/EndIn";
 import Recommended from "../../recommended/Recommended";
+
+//styles
+import styles from "./home.module.scss";
 
 const Home = () => {
   const sizeScreen = useDetectedScreen();

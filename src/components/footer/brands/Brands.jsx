@@ -1,12 +1,17 @@
 import React from "react";
 
+//components
 import Icon from "../../icon/Icon";
+
+//images
 import cace from "../../../img/brands/cace.png";
 import ahora18 from "../../../img/brands/ahora18.png";
 import hotSale from "../../../img/brands/hotsale.png";
 import afip from "../../../img/brands/afip.png";
 
+//styles
 import styles from "./brands.module.scss";
+
 const Brands = () => {
   return (
     <div className={styles.contentBrands}>

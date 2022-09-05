@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
+//images
 import hotSale from "../../img/hotsale_btn.png";
+
+//styles
 import styles from "./nav.module.scss";
 
 const Nav = (props) => {
@@ -34,7 +37,6 @@ const Nav = (props) => {
             <Link className={styles.btn} to="/productsSections">
               Funko
             </Link>
-
             <Link className={`${styles.btn} ${styles.hotsale}`} to="/">
               <img src={hotSale} alt="hot sale" />
             </Link>

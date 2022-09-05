@@ -1,20 +1,17 @@
 import React, { useState, useEffect } from "react";
 import useDetectedScreen from "../../hooks/useDetectedScreen.js";
 
-//icons
-import Icon from "../icon/Icon";
-
 //components
+import Icon from "../icon/Icon";
 import BtnNav from "../buttons/btnNav/BtnNav";
+import Nav from "../nav/Nav";
 
 //styles
 import styles from "./header.module.scss";
-import Nav from "../nav/Nav";
 
 const Header = () => {
   const sizeScreen = useDetectedScreen();
   const [typeScreen, setTypeScreen] = useState(sizeScreen);
-
   const [hiddenMenu, sethiddenMenu] = useState(true);
 
   const handlehiddenMenu = () => {
