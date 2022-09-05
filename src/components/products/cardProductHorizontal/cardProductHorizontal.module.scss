@@ -2,7 +2,7 @@
 
 .card {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   position: relative;
   top: -8px;
@@ -20,5 +20,6 @@
 
   .dataProduct {
     margin-top: 0.7rem;
+    padding-bottom: 1.5rem;
   }
 }

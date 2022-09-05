@@ -32,7 +32,7 @@
       align-items: center;
 
       &:hover {
-        box-shadow: 0 3px 9px rgba(0, 0, 0, .15);
+        box-shadow: 0 3px 9px rgba(0, 0, 0, 0.15);
         color: $orange;
       }
     }
@@ -40,7 +40,6 @@
     .search {
       border: 1px solid $gray;
       display: none;
-
 
       .searchIcon {
         height: 15px;
@@ -57,7 +56,7 @@
     }
 
     .shop {
-      margin-right: .9rem;
+      margin-right: 0.9rem;
       position: relative;
 
       .shoppingIcon {
@@ -80,7 +79,6 @@
 @media screen and (min-width: 768px) {
   .header {
     .btnsRight {
-
       .search,
       .user {
         display: flex;
@@ -104,4 +102,5 @@
   }
 }
 
-@media screen and (min-width: 1365px) {}
+@media screen and (min-width: 1365px) {
+}

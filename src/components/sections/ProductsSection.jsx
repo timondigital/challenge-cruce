@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import useDetectedScreen from "../../hooks/useDetectedScreen.js";
-
 import { Link } from "react-router-dom";
+import useDetectedScreen from "../../hooks/useDetectedScreen.js";
 
 //components
 import Filter from "../filter/Filter";
@@ -9,13 +8,16 @@ import SortBy from "../sortBy/SortBy";
 import CardProductHorizontal from "../products/cardProductHorizontal/CardProductHorizontal";
 import BtnUp from "../buttons/btnUp/BtnUp";
 import BtnPagination from "../buttons/btnPagination/BtnPagination";
+
 //images
 import funkoCollection from "../../img/products/banner_listadocollection.png";
-import producto from "../../img/products/product1.png";
+import products from "../../asset/constant/product.json";
 
 //styles
 import styles from "./productSection.module.scss";
 import CardProduct from "../products/cardProduct/CardProduct.jsx";
+
+const productImg = require.context("../../img/products", true);
 
 const ProductsSection = () => {
   const sizeScreen = useDetectedScreen();
@@ -52,122 +54,35 @@ const ProductsSection = () => {
       <div className={styles.contentProducts}>
         {typeScreen !== "desktop" ? (
           <>
-            <CardProductHorizontal
-              className={styles.cardProductHorizontal}
-              classNameImg={styles.img}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
-              img={producto}
-              off={true}
-            />
-            <CardProductHorizontal
-              className={styles.cardProductHorizontal}
-              classNameImg={styles.img}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
-              img={producto}
-              off={false}
-            />
-            <CardProductHorizontal
-              className={styles.cardProductHorizontal}
-              classNameImg={styles.img}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
-              img={producto}
-              off={false}
-            />
-            <CardProductHorizontal
-              className={styles.cardProductHorizontal}
-              classNameImg={styles.img}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
-              img={producto}
-              off={false}
-            />{" "}
-            <CardProductHorizontal
-              className={styles.cardProductHorizontal}
-              classNameImg={styles.img}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
-              img={producto}
-              off={true}
-            />
-            <CardProductHorizontal
-              className={styles.cardProductHorizontal}
-              classNameImg={styles.img}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
-              img={producto}
-              off={false}
-            />
-            <CardProductHorizontal
-              className={styles.cardProductHorizontal}
-              classNameImg={styles.img}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
-              img={producto}
-              off={true}
-            />
-            <CardProductHorizontal
-              className={styles.cardProductHorizontal}
-              classNameImg={styles.img}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
-              img={producto}
-              off={false}
-            />
+            {products.map((product) => (
+              <CardProductHorizontal
+                className={styles.cardProductHorizontal}
+                classNameImg={styles.img}
+                description={product.description}
+                img={productImg(product.img)}
+                off={product.off}
+                price={product.price}
+                priceOffer={product.priceOffer}
+                brand={product.brand}
+                inStock={product.inStock}
+              />
+            ))}
           </>
         ) : (
           <>
-            <CardProduct
-              className={styles.cardProduct}
-              classNameImg={styles.img}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
-              img={producto}
-              off={true}
-            />
-            <CardProduct
-              className={styles.cardProduct}
-              classNameImg={styles.img}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
-              img={producto}
-              off={false}
-            />
-            <CardProduct
-              className={styles.cardProduct}
-              classNameImg={styles.img}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
-              img={producto}
-              off={false}
-              inStock={false}
-            />
-            <CardProduct
-              className={styles.cardProduct}
-              classNameImg={styles.img}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
-              img={producto}
-              off={true}
-            />
-            <CardProduct
-              className={styles.cardProduct}
-              classNameImg={styles.img}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
-              img={producto}
-              off={false}
-            />
-            <CardProduct
-              className={styles.cardProduct}
-              classNameImg={styles.img}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
-              img={producto}
-              off={false}
-            />
-            <CardProduct
-              className={styles.cardProduct}
-              classNameImg={styles.img}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
-              img={producto}
-              off={true}
-            />
-            <CardProduct
-              className={styles.cardProduct}
-              classNameImg={styles.img}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
-              img={producto}
-              off={true}
-            />
+            {products.map((product) => (
+              <CardProduct
+                className={styles.cardProduct}
+                classNameImg={styles.img}
+                description={product.description}
+                img={productImg(product.img)}
+                off={product.off}
+                price={product.price}
+                priceOffer={product.priceOffer}
+                brand={product.brand}
+                inStock={product.inStock}
+              />
+            ))}
           </>
         )}
       </div>

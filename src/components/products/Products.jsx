@@ -28,6 +28,10 @@ const Products = () => {
           img={product1}
           description={products[0].description}
           off={products[0].off}
+          price={products[0].price}
+          priceOffer={products[0].priceOffer}
+          brand={products[0].brand}
+          inStock={products[0].inStock}
         />
 
         <CardProduct
@@ -35,30 +39,50 @@ const Products = () => {
           img={product2}
           description={products[1].description}
           off={products[1].off}
+          price={products[1].price}
+          priceOffer={products[1].priceOffer}
+          brand={products[1].brand}
+          inStock={products[1].inStock}
         />
         <CardProduct
           className={`${styles.product} ${styles.num3}`}
           img={product3}
           description={products[2].description}
           off={products[2].off}
+          price={products[2].price}
+          priceOffer={products[2].priceOffer}
+          brand={products[2].brand}
+          inStock={products[2].inStock}
         />
         <CardProduct
           className={`${styles.product} ${styles.num4}`}
           img={product4}
           description={products[3].description}
           off={products[3].off}
+          price={products[3].price}
+          priceOffer={products[3].priceOffer}
+          brand={products[3].brand}
+          inStock={products[3].inStock}
         />
         <CardProduct
           className={`${styles.product} ${styles.num5}`}
           img={product5}
           description={products[4].description}
           off={products[4].off}
+          price={products[4].price}
+          priceOffer={products[4].priceOffer}
+          brand={products[4].brand}
+          inStock={products[4].inStock}
         />
         <CardProduct
           className={`${styles.product} ${styles.num6}`}
           img={product6}
           description={products[5].description}
           off={products[5].off}
+          price={products[5].price}
+          priceOffer={products[5].priceOffer}
+          brand={products[5].brand}
+          inStock={products[5].inStock}
         />
       </div>
     </>

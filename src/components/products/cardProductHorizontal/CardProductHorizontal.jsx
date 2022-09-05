@@ -19,6 +19,10 @@ const CardProductHorizontal = (props) => {
         className={styles.dataProduct}
         description={props.description}
         off={props.off}
+        price={props.price}
+        priceOffer={props.priceOffer}
+        brand={props.brand}
+        inStock={props.inStock}
       />
     </div>
   );

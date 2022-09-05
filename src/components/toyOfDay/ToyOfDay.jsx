@@ -7,7 +7,10 @@ import product from "../../img/products/product1.png";
 import CardProductHorizontal from "../products/cardProductHorizontal/CardProductHorizontal";
 import CardProduct from "../products/cardProduct/CardProduct";
 
+import products from "../../asset/constant/product.json";
 import styles from "./toyOfDay.module.scss";
+const productImg = require.context("../../img/products", true);
+
 const ToyOfDay = () => {
   const sizeScreen = useDetectedScreen();
   const [typeScreen, setTypeScreen] = useState(sizeScreen);
@@ -27,19 +30,27 @@ const ToyOfDay = () => {
             alt="video promocion del día"
           />
           <CardProductHorizontal
-            img={product}
-            off={true}
-            description="Funko POP | Game Of Thrones - Daenerys 25"
             className={styles.cardProductHorizontal}
+            img={productImg(products[0].img)}
+            description={products[0].description}
+            off={products[0].off}
+            price={products[0].price}
+            priceOffer={products[0].priceOffer}
+            brand={products[0].brand}
+            inStock={products[0].inStock}
           />
         </>
       ) : (
         <>
           <CardProduct
-            img={product}
             className={styles.cardProduct}
-            description="Funko POP | Game Of Thrones - Daenerys 25"
-            off={true}
+            img={productImg(products[0].img)}
+            description={products[0].description}
+            off={products[0].off}
+            price={products[0].price}
+            priceOffer={products[0].priceOffer}
+            brand={products[0].brand}
+            inStock={products[0].inStoc}
           />
           <img
             className={styles.img}

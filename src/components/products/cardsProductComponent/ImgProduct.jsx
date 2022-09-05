@@ -11,7 +11,7 @@ const ImgCard = (props) => {
       <img
         className={`${styles.productImg}`}
         src={props.img}
-        alt="descripcion"
+        alt="imagen producto"
       />
       {off ? (
         <div className={styles.offer}>

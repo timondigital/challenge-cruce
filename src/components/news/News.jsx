@@ -6,8 +6,12 @@ import BtnGroup from "../buttons/btnGroup/BtnGroup";
 import product from "../../img/products/product1.png";
 import backpack from "../../img/products/backpack2.png";
 
+import products from "../../asset/constant/product.json";
+
+//styles
 import styles from "./news.module.scss";
 import { useEffect } from "react";
+const productImg = require.context("../../img/products", true);
 
 const News = () => {
   const sizeScreen = useDetectedScreen();
@@ -19,16 +23,24 @@ const News = () => {
         return (
           <>
             <CardProduct
-              img={product}
-              off={false}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
+              img={productImg(products[0].img)}
+              description={products[0].description}
+              off={products[0].off}
+              price={products[0].price}
+              priceOffer={products[0].priceOffer}
+              brand={products[0].brand}
+              inStock={products[0].inStock}
             />
             <CardProduct
-              img={product}
-              off={false}
-              description="Funko POP | Game Of Thrones - Daenerys 25"
               className={styles.cardProduct}
+              img={productImg(products[1].img)}
+              description={products[1].description}
+              off={products[1].off}
+              price={products[1].price}
+              priceOffer={products[1].priceOffer}
+              brand={products[1].brand}
+              inStock={products[1].inStock}
             />
           </>
         );

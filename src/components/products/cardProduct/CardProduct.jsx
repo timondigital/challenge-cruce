@@ -13,7 +13,14 @@ const CardProduct = (props) => {
         off={props.off}
         className={`${styles.img} ${props.classNameImg}`}
       />
-      <DataProduct off={props.off} description={props.description} />
+      <DataProduct
+        off={props.off}
+        description={props.description}
+        price={props.price}
+        priceOffer={props.priceOffer}
+        brand={props.brand}
+        inStock={props.inStock}
+      />
       <BtnShop className={`${styles.btnShop}`} text="Agregar" />
     </div>
   );
