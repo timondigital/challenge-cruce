@@ -56,17 +56,20 @@ const ProductsSection = () => {
           <>
             {products.map((product) =>
               product.brand === "Funko" ? (
-                <CardProductHorizontal
-                  className={styles.cardProductHorizontal}
-                  classNameImg={styles.img}
-                  description={product.description}
-                  img={productImg(product.img)}
-                  off={product.off}
-                  price={product.price}
-                  priceOffer={product.priceOffer}
-                  brand={product.brand}
-                  inStock={product.inStock}
-                />
+                (console.log(product.brand),
+                (
+                  <CardProductHorizontal
+                    className={styles.cardProductHorizontal}
+                    classNameImg={styles.img}
+                    description={product.description}
+                    img={productImg(product.img)}
+                    off={product.off}
+                    price={product.price}
+                    priceOffer={product.priceOffer}
+                    brand={product.brand}
+                    inStock={product.inStock}
+                  />
+                ))
               ) : (
                 <></>
               )
