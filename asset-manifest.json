@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/challenge-cruce/static/css/main.8c6aedd1.css",
-    "main.js": "/challenge-cruce/static/js/main.3e4fffcd.js",
+    "main.js": "/challenge-cruce/static/js/main.9f8db5aa.js",
     "static/media/banner_listadocollection.png": "/challenge-cruce/static/media/banner_listadocollection.49a88b55bbbf738a4faa.png",
     "static/media/img1.png": "/challenge-cruce/static/media/img1.fca900091f1dd8ed53de.png",
     "static/media/backpack2.png": "/challenge-cruce/static/media/backpack2.438258292ae0c8eb918c.png",
@@ -21,10 +21,10 @@
     "static/media/product8.png": "/challenge-cruce/static/media/product8.ee700b2d6231f3a2f91f.png",
     "index.html": "/challenge-cruce/index.html",
     "main.8c6aedd1.css.map": "/challenge-cruce/static/css/main.8c6aedd1.css.map",
-    "main.3e4fffcd.js.map": "/challenge-cruce/static/js/main.3e4fffcd.js.map"
+    "main.9f8db5aa.js.map": "/challenge-cruce/static/js/main.9f8db5aa.js.map"
   },
   "entrypoints": [
     "static/css/main.8c6aedd1.css",
-    "static/js/main.3e4fffcd.js"
+    "static/js/main.9f8db5aa.js"
   ]
 }
