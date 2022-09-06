@@ -78,7 +78,7 @@ const ProductsSection = () => {
         ) : (
           <>
             {products.map((product) =>
-              product.brand === "Funco" ? (
+              product.brand === "Funko" ? (
                 <CardProduct
                   className={styles.cardProduct}
                   classNameImg={styles.img}
